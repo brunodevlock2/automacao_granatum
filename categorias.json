@@ -1,0 +1,725 @@
+[
+    {
+        "id": 2401794,
+        "descricao": "Administrativo - Despesa",
+        "cor": "#ff4e3b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2165187,
+        "descricao": "Administrativo - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2384110,
+                "descricao": "Insumos Zeladoria",
+                "cor": "#ff1800",
+                "parent_id": 2165187,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2148098,
+        "descricao": "Administrativo - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2120355,
+        "descricao": "Alimentação - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2384108,
+                "descricao": "Alimentação - Pagos Outros Núcleos",
+                "cor": "#ff1800",
+                "parent_id": 2120355,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2401582,
+        "descricao": "Alimentação - Organ - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2401581,
+        "descricao": "Alimentação - Organ - Receita",
+        "cor": "#36e55a",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148095,
+        "descricao": "Alimentação - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": [
+            {
+                "id": 2384046,
+                "descricao": "Alimentação  - Recebido outros Núcleos",
+                "cor": "#36e55a",
+                "parent_id": 2148095,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2148121,
+        "descricao": "Alojamento - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148109,
+        "descricao": "Alojamento - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148122,
+        "descricao": "Atividades - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2148123,
+                "descricao": "Lanchonete - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2148122,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148124,
+                "descricao": "Loja ProsperaManto - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2148122,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148125,
+                "descricao": "Captação de Recursos - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2148122,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2151525,
+                "descricao": "Uniformes - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2148122,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2384109,
+                "descricao": "Caixa Jovens",
+                "cor": "#ff1800",
+                "parent_id": 2148122,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2148099,
+        "descricao": "Atividades - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": [
+            {
+                "id": 2148101,
+                "descricao": "Lanchonete - Receita",
+                "cor": "#2dbf4b",
+                "parent_id": 2148099,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148102,
+                "descricao": "Loja ProsperaManto - Receita",
+                "cor": "#2dbf4b",
+                "parent_id": 2148099,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148103,
+                "descricao": "Captação de Recursos - Receita",
+                "cor": "#2dbf4b",
+                "parent_id": 2148099,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2151524,
+                "descricao": "Uniformes - Receita",
+                "cor": "#2dbf4b",
+                "parent_id": 2148099,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2384045,
+                "descricao": "Caixa Jovens",
+                "cor": "#2dbf4b",
+                "parent_id": 2148099,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2148120,
+        "descricao": "Beneficência - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148110,
+        "descricao": "Beneficência - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2120370,
+        "descricao": "Contas  do Núcleo",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2120373,
+                "descricao": "Água",
+                "cor": "#ff1800",
+                "parent_id": 2120370,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148112,
+                "descricao": "Luz",
+                "cor": "#ff1800",
+                "parent_id": 2120370,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148113,
+                "descricao": "IPTU",
+                "cor": "#ff1800",
+                "parent_id": 2120370,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148114,
+                "descricao": "Outras Taxas  Municipais",
+                "cor": "#ff1800",
+                "parent_id": 2120370,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148118,
+                "descricao": "Internet",
+                "cor": "#ff1800",
+                "parent_id": 2120370,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2120359,
+        "descricao": "Custos com funcionários",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2120360,
+                "descricao": "13º Salário - Zelador",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120361,
+                "descricao": "Férias - Zelador",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120362,
+                "descricao": "FGTS - Zelador e Limpeza",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120363,
+                "descricao": "INSS - Zelador e Limpeza",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120364,
+                "descricao": "Outros custos com funcionários - Zelador e Limpeza",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120365,
+                "descricao": "Salário - Zelador",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148104,
+                "descricao": "Salário  - Limpeza",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2227886,
+                "descricao": "DARF - Salário Zelador NDM",
+                "cor": "#ff1800",
+                "parent_id": 2120359,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2120366,
+        "descricao": "Custos com materiais",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2120367,
+                "descricao": "Produtos de limpeza do Núcleo",
+                "cor": "#ff1800",
+                "parent_id": 2120366,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120368,
+                "descricao": "Materiais para Alimentação",
+                "cor": "#ff1800",
+                "parent_id": 2120366,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148105,
+                "descricao": "Manutenção",
+                "cor": "#ff1800",
+                "parent_id": 2120366,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148107,
+                "descricao": "Plantio",
+                "cor": "#ff1800",
+                "parent_id": 2120366,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148108,
+                "descricao": "Som",
+                "cor": "#ff1800",
+                "parent_id": 2120366,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2120387,
+        "descricao": "Dízimo",
+        "cor": "#4fe402",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148035,
+        "descricao": "Doações",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": [
+            {
+                "id": 2384047,
+                "descricao": "Deposito não identificado",
+                "cor": "#2dbf4b",
+                "parent_id": 2148035,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2120388,
+        "descricao": "Empréstimos",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2120389,
+                "descricao": "Obras Vestiários",
+                "cor": "#ff1800",
+                "parent_id": 2120388,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120390,
+                "descricao": "Painéis Solares",
+                "cor": "#ff1800",
+                "parent_id": 2120388,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2340696,
+        "descricao": "Empréstimos - Recebidos",
+        "cor": "#36e55a",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148119,
+        "descricao": "Fundo de Obras",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2210052,
+        "descricao": "Investimento - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2207890,
+        "descricao": "Investimento - Receita",
+        "cor": "#0f4019",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2120392,
+        "descricao": "Mensalidade",
+        "cor": "#49d600",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2120386,
+        "descricao": "Patrimônio",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2120351,
+        "descricao": "Repasses - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": [
+            {
+                "id": 2120352,
+                "descricao": "DG - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2120351,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120353,
+                "descricao": "Fundo Regional - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2120351,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120354,
+                "descricao": "Lar SAMA - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2120351,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148117,
+                "descricao": "Novo Encanto - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2120351,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2120342,
+        "descricao": "Repasses - Receita",
+        "cor": "#009900",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": [
+            {
+                "id": 2120343,
+                "descricao": "Lar SAMA - Receita",
+                "cor": "#007700",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2120344,
+                "descricao": "Novo Encanto - Receita",
+                "cor": "#005700",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148030,
+                "descricao": "DG - Fundo de Participação - Receita",
+                "cor": "#009900",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148031,
+                "descricao": "DG - Fundo de Saúde - Receita",
+                "cor": "#009900",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148032,
+                "descricao": "Fundo Regional - Receita",
+                "cor": "#009900",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148033,
+                "descricao": "DG - Fundo Beneficente - Receita",
+                "cor": "#009900",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2148034,
+                "descricao": "DG - Fundo Ambiental - Receita",
+                "cor": "#009900",
+                "parent_id": 2120342,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            }
+        ]
+    },
+    {
+        "id": 2120374,
+        "descricao": "Segurança - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148096,
+        "descricao": "Segurança - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2151523,
+        "descricao": "Sistema - Despesas",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2148097,
+        "descricao": "Sistema - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2471686,
+        "descricao": "Taxa de Preparo - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2384107,
+        "descricao": "Taxa de Preparo - Receita",
+        "cor": "#2dbf4b",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
+        "id": 2120391,
+        "descricao": "Taxas e tarifas bancárias",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    }
+]

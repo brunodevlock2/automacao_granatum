@@ -1,0 +1,340 @@
+[
+    {
+        "id": 308893,
+        "descricao": "Acordo",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308871,
+        "descricao": "Administrativo",
+        "ativo": true,
+        "centros_custo_lucro_filhos": [
+            {
+                "id": 308872,
+                "descricao": "Encontros",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308873,
+                "descricao": "Jóia",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308874,
+                "descricao": "DG",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308875,
+                "descricao": "Outros",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308876,
+                "descricao": "IPTU",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308877,
+                "descricao": "Taxa de Funcionamento",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308914,
+                "descricao": "Fundo Regional",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 340530,
+                "descricao": "Som/Acústica Templo",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 345659,
+                "descricao": "Bilhetes Aéreos",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 345660,
+                "descricao": "Transf entre caixas",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            }
+        ]
+    },
+    {
+        "id": 308895,
+        "descricao": "Água",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308878,
+        "descricao": "Atividades",
+        "ativo": true,
+        "centros_custo_lucro_filhos": [
+            {
+                "id": 308879,
+                "descricao": "Lanchonete",
+                "parent_id": 308878,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308880,
+                "descricao": "Loja ProsperaManto",
+                "parent_id": 308878,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308881,
+                "descricao": "Uniformes",
+                "parent_id": 308878,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308882,
+                "descricao": "Eventos",
+                "parent_id": 308878,
+                "ativo": true,
+                "centros_custo_lucro_filhos": [
+                    {
+                        "id": 337972,
+                        "descricao": "Festa Junina",
+                        "parent_id": 308882,
+                        "ativo": true,
+                        "centros_custo_lucro_filhos": []
+                    },
+                    {
+                        "id": 340098,
+                        "descricao": "Caixa DMC",
+                        "parent_id": 308882,
+                        "ativo": true,
+                        "centros_custo_lucro_filhos": []
+                    },
+                    {
+                        "id": 343252,
+                        "descricao": "Caixa Jovens",
+                        "parent_id": 308882,
+                        "ativo": true,
+                        "centros_custo_lucro_filhos": []
+                    },
+                    {
+                        "id": 358931,
+                        "descricao": "Aniversário NDM",
+                        "parent_id": 308882,
+                        "ativo": true,
+                        "centros_custo_lucro_filhos": []
+                    }
+                ]
+            },
+            {
+                "id": 308883,
+                "descricao": "Incensos Jovens",
+                "parent_id": 308878,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            }
+        ]
+    },
+    {
+        "id": 308884,
+        "descricao": "Beneficência",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308885,
+        "descricao": "Dízimo",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308886,
+        "descricao": "Doação",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308887,
+        "descricao": "Empréstimo",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308888,
+        "descricao": "Funcionários",
+        "ativo": true,
+        "centros_custo_lucro_filhos": [
+            {
+                "id": 308889,
+                "descricao": "Zelador",
+                "parent_id": 308888,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308890,
+                "descricao": "Limpeza",
+                "parent_id": 308888,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            }
+        ]
+    },
+    {
+        "id": 308891,
+        "descricao": "Internet",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 316894,
+        "descricao": "Investimento",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308896,
+        "descricao": "Lar SAMA",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308894,
+        "descricao": "Luz",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308898,
+        "descricao": "Manutenção",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308892,
+        "descricao": "Mensalidade",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308899,
+        "descricao": "Multa",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308897,
+        "descricao": "Novo Encanto",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308900,
+        "descricao": "Patrimônio",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308901,
+        "descricao": "Plantio",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308903,
+        "descricao": "Produtos Limpeza",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308904,
+        "descricao": "Publicações DG",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308912,
+        "descricao": "Sistema",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308911,
+        "descricao": "Tarifa Bancária",
+        "ativo": true,
+        "centros_custo_lucro_filhos": []
+    },
+    {
+        "id": 308905,
+        "descricao": "Taxas",
+        "ativo": true,
+        "centros_custo_lucro_filhos": [
+            {
+                "id": 308906,
+                "descricao": "Alimentação",
+                "parent_id": 308905,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308907,
+                "descricao": "Alojamento",
+                "parent_id": 308905,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308908,
+                "descricao": "Segurança",
+                "parent_id": 308905,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308909,
+                "descricao": "Casamento",
+                "parent_id": 308905,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308910,
+                "descricao": "Preparo",
+                "parent_id": 308905,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 308913,
+                "descricao": "Fundo de Obras",
+                "parent_id": 308905,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            }
+        ]
+    }
+]

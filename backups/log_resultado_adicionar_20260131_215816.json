@@ -1,0 +1,14 @@
+{
+    "processadas": 1,
+    "sucesso": 1,
+    "falhas": 0,
+    "detalhes": [
+        {
+            "cobranca_id_original": 3533766,
+            "cobranca_id_novo": 3533767,
+            "cliente_id": 3146669,
+            "status": "OK",
+            "itens_count": 18
+        }
+    ]
+}
