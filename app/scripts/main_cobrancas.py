@@ -1,9 +1,16 @@
-from gestor_cobrancas import GestorCobrancas
-from api_client import GranatumClient
-from analise_dados import AnalisadorGranatum
-import config
-import json
+import sys
 import os
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
+# Imports using absolute paths from project root
+# For local modules (same directory), we can keep relative or use local if run as script
+# But relying on root being in path is safer for IDEs too.
+from app.scripts.gestor_cobrancas import GestorCobrancas
+from app.api.api_client import GranatumClient
+from app.scripts.analise_dados import AnalisadorGranatum
+from app.config import config
+import json
 from datetime import datetime, timedelta
 
 
@@ -97,7 +104,7 @@ def carregar_categorias_flat():
     Carrega categorias.json e retorna lista flat apenas de categorias folha
     (sem filhos), que sao as unicas aceitas pela API.
     """
-    caminho = os.path.join(os.path.dirname(os.path.abspath(__file__)), "categorias.json")
+    caminho = getattr(config, "CATEGORIAS_JSON_PATH", "data/categorias.json")
     with open(caminho, "r", encoding="utf-8") as f:
         dados = json.load(f)
 
@@ -204,7 +211,7 @@ def carregar_centros_custo_flat():
     """
     Carrega centros_de_custo.json e retorna lista flat apenas de folhas.
     """
-    caminho = os.path.join(os.path.dirname(os.path.abspath(__file__)), "centros_de_custo.json")
+    caminho = getattr(config, "CENTROS_CUSTO_JSON_PATH", "data/centros_de_custo.json")
     with open(caminho, "r", encoding="utf-8") as f:
         dados = json.load(f)
 
@@ -422,7 +429,7 @@ def executar_adicionar(gestor):
     if not valor_input:
         print("Valor obrigatorio. Cancelando.")
         return
-    valor = float(valor_input)
+    valor = float(valor_input.replace(',', '.'))
 
     ccl_id = escolher_centro_custo("Centro de Custo")
 
@@ -481,7 +488,7 @@ def executar_remover(gestor):
 
     val = input("  Valor exato (opcional): ").strip()
     if val:
-        filtro["valor"] = float(val)
+        filtro["valor"] = float(val.replace(',', '.'))
 
     if not filtro:
         print("Nenhum criterio informado. Cancelando.")

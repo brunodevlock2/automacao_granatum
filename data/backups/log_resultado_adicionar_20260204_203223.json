@@ -1,0 +1,25 @@
+{
+    "data_execucao": "2026-02-04 20:32:23",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Alimentação Sessão pra casais Divino Manto - (R$17,50 por pessoa - R$35,00 por casal)",
+        "categoria_id": 2401581,
+        "valor": 17.5,
+        "centro_custo_lucro_id": 308906
+    },
+    "periodo": {
+        "data_inicio": "2026-02-01",
+        "data_fim": "2026-02-28"
+    },
+    "cobrancas_recriadas": 0,
+    "cobrancas_com_falha": 1,
+    "total_lancamentos": 0,
+    "clientes_impactados": 0,
+    "lista_clientes": [],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3537405,
+            "status": "ABORTADO_PELO_USUARIO"
+        }
+    ]
+}

@@ -1,11 +1,15 @@
+import sys
+import os
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from datetime import datetime, timedelta
-from api_client import GranatumClient
-import os
-import config
+from app.api.api_client import GranatumClient
+from app.config import config
 
 class AnalisadorGranatum:
     def __init__(self, client: GranatumClient):
@@ -68,7 +72,7 @@ class AnalisadorGranatum:
         """Carrega 'categorias.json' e retorna um mapa de ID para descricao."""
         try:
             # Reutiliza a função de `main_cobrancas` se possível, ou reimplementa
-            from main_cobrancas import carregar_categorias_flat
+            from app.scripts.main_cobrancas import carregar_categorias_flat
             categorias = carregar_categorias_flat()
             return {c['id']: c['descricao'] for c in categorias}
         except (ImportError, FileNotFoundError):
@@ -79,7 +83,7 @@ class AnalisadorGranatum:
         """Carrega 'centros_de_custo.json' e retorna um mapa de ID para descricao."""
         try:
             # Reutiliza a função de `main_cobrancas` se possível, ou reimplementa
-            from main_cobrancas import carregar_centros_custo_flat
+            from app.scripts.main_cobrancas import carregar_centros_custo_flat
             centros = carregar_centros_custo_flat()
             return {c['id']: c['descricao'] for c in centros}
         except (ImportError, FileNotFoundError):

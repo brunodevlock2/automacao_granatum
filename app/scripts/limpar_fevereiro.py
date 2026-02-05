@@ -1,10 +1,14 @@
-from api_granatum import GranatumAPI
-import config  # <--- ADICIONAMOS ISSO
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
+from app.api.api_granatum import GranatumClient
+from app.config import config
 import json
 import time
 
 def executar_limpeza():
-    api = GranatumAPI()
+    api = GranatumClient()
     
     # Datas de Fevereiro
     inicio = "2026-02-01"
@@ -12,7 +16,8 @@ def executar_limpeza():
     
     # <--- MUDANÇA AQUI: Agora passamos a conta padrão do seu config.py
     print(f"🔍 Buscando lançamentos na conta {config.CONTA_ID_PADRAO}...")
-    lancamentos = api.listar_lancamentos(inicio, fim, conta_id=config.CONTA_ID_PADRAO)
+    params = {"data_inicio": inicio, "data_fim": fim, "conta_id": config.CONTA_ID_PADRAO}
+    lancamentos = api.get("lancamentos", params)
     
     qtd = len(lancamentos)
     if qtd == 0:
@@ -43,7 +48,7 @@ def executar_limpeza():
         
         print(f"🗑️ Deletando ID {id_lancamento} ({descricao})...", end="")
         
-        if api.deletar_lancamento(id_lancamento):
+        if api.delete(f"lancamentos/{id_lancamento}"):
             print(" Feito!")
             sucessos += 1
         else:

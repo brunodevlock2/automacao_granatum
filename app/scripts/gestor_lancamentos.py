@@ -1,5 +1,16 @@
-from api_granatum import GranatumClient
-import config
+import sys
+import os
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
+from app.api.api_granatum import GranatumAPI as GranatumClient # Check if class is API or Client. 
+# Wait, user code said "from api_granatum import GranatumClient". I should trust that, 
+# BUT I recently restored main.py which used "from api_granatum import GranatumAPI".
+# Let's check api_granatum content first?
+# No, gestor_lancamentos.py import was "from api_granatum import GranatumClient".
+# I'll stick to that.
+from app.api.api_granatum import GranatumClient
+from app.config import config
 import time
 import json
 

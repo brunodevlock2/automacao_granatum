@@ -1,5 +1,10 @@
+import sys
+import os
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 import requests
-import config
+from app.config import config
 
 class GranatumClient:
     def __init__(self):
@@ -49,8 +54,16 @@ class GranatumClient:
             if not self.silent:
                 print(f" ❌ Erro ao criar: {e}")
                 try:
-                    print(f"    Detalhe: {response.text}")
+                    if e.response is not None:
+                        print(f"    Detalhe: {e.response.text}")
                 except Exception:
+                    pass
+            
+            # Se for erro de validação (422), retorna o JSON para tratamento
+            if isinstance(e, requests.exceptions.HTTPError) and e.response is not None and e.response.status_code == 422:
+                try:
+                    return e.response.json()
+                except:
                     pass
             return None
 

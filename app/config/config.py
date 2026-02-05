@@ -20,11 +20,19 @@ URL_BASE = "https://api.granatum.com.br/v1"
 
 # --- Configurações de Cobranças ---
 
+import os
+# Base dir is project root (c:\automacao_granatum)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Diretório com arquivos JSON de listas de clientes
-CLIENTES_DIR = "clientes"
+CLIENTES_DIR = os.path.join(BASE_DIR, "data", "clientes")
 
 # Tipo de cobrança padrão (opções: 'boleto', 'cartao_credito', 'pix')
 TIPO_COBRANCA_PADRAO = "boleto"
 
 # Diretório para backups
-BACKUP_DIR = "backups"
+BACKUP_DIR = os.path.join(BASE_DIR, "data", "backups")
+
+# Arquivos JSON Data
+CATEGORIAS_JSON_PATH = os.path.join(BASE_DIR, "data", "categorias.json")
+CENTROS_CUSTO_JSON_PATH = os.path.join(BASE_DIR, "data", "centros_de_custo.json")

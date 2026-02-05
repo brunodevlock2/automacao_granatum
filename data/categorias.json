@@ -1,12 +1,31 @@
 [
     {
+        "id": 2521766,
+        "descricao": "Administrativo - Despesa",
+        "cor": "#ff1800",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 1,
+        "categorias_filhas": []
+    },
+    {
         "id": 2401794,
         "descricao": "Administrativo - Despesa",
         "cor": "#ff4e3b",
         "wgi_usuario_id": 106117,
         "ativo": true,
         "tipo_categoria_id": 1,
-        "categorias_filhas": []
+        "categorias_filhas": [
+            {
+                "id": 2521760,
+                "descricao": "Topografia - Despesa",
+                "cor": "#ff1800",
+                "parent_id": 2401794,
+                "ativo": true,
+                "tipo_categoria_id": 1,
+                "categorias_filhas": []
+            }
+        ]
     },
     {
         "id": 2165187,
@@ -28,13 +47,32 @@
         ]
     },
     {
+        "id": 2521767,
+        "descricao": "Administrativo - Receita",
+        "cor": "#993399",
+        "wgi_usuario_id": 106117,
+        "ativo": true,
+        "tipo_categoria_id": 2,
+        "categorias_filhas": []
+    },
+    {
         "id": 2148098,
         "descricao": "Administrativo - Receita",
         "cor": "#2dbf4b",
         "wgi_usuario_id": 106117,
         "ativo": true,
         "tipo_categoria_id": 2,
-        "categorias_filhas": []
+        "categorias_filhas": [
+            {
+                "id": 2521758,
+                "descricao": "Topografia",
+                "cor": "#2dbf4b",
+                "parent_id": 2148098,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            }
+        ]
     },
     {
         "id": 2120355,

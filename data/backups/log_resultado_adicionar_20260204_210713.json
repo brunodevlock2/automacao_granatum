@@ -1,0 +1,32 @@
+{
+    "data_execucao": "2026-02-04 21:07:13",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Alimentação Sessão pra casais Divino Manto - (R$17,50 por pessoa - R$35,00 por casal)",
+        "categoria_id": 2401581,
+        "valor": 17.5,
+        "centro_custo_lucro_id": 308906
+    },
+    "periodo": {
+        "data_inicio": "2026-02-01",
+        "data_fim": "2026-02-28"
+    },
+    "cobrancas_recriadas": 1,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 18,
+    "clientes_impactados": 1,
+    "lista_clientes": [
+        3146650
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3537409,
+            "cobranca_id_novo": 3537410,
+            "cliente_id": 3146650,
+            "cliente_nome": "Adilson Barbosa de Oliveira - Casal",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "879.53"
+        }
+    ]
+}

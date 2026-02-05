@@ -1,8 +1,12 @@
-from api_client import GranatumClient
-import config
+import sys
+import os
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
+from app.api.api_client import GranatumClient
+from app.config import config
 import json
 import time
-import os
 from datetime import datetime
 
 
@@ -229,7 +233,7 @@ class GestorCobrancas:
         if self._categorias_pai is not None:
             return self._categorias_pai
 
-        caminho = os.path.join(os.path.dirname(os.path.abspath(__file__)), "categorias.json")
+        caminho = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../data/categorias.json")
         try:
             with open(caminho, "r", encoding="utf-8") as f:
                 dados = json.load(f)
@@ -252,59 +256,12 @@ class GestorCobrancas:
     def _validar_categorias_itens(self, itens_lista):
         """
         Verifica se algum item usa categoria pai (que tem filhas).
-        Se encontrar, pede ao usuario para escolher a categoria filha correta.
-        Retorna a lista corrigida ou None se o usuario cancelar.
+        O usuario pediu para PERMITIR usar qualquer categoria.
+        Entao, apenas retornamos a lista original sem bloquear.
+        A API que decida se aceita ou nao.
         """
-        mapa_pai = self._carregar_mapa_categorias_pai()
-        if not mapa_pai:
-            return itens_lista
-
-        itens_corrigidos = []
-        for item in itens_lista:
-            cat_id = item.get("categoria_id")
-            if cat_id not in mapa_pai:
-                itens_corrigidos.append(item)
-                continue
-
-            info = mapa_pai[cat_id]
-            filhas = info["filhas"]
-
-            print(f"\n  ⚠ CATEGORIA PAI detectada no item '{item['descricao']}':")
-            print(f"    Categoria atual: {info['descricao']} (ID {cat_id}) - tem {len(filhas)} subcategoria(s)")
-
-            if len(filhas) == 1:
-                filha = filhas[0]
-                print(f"    Substituindo automaticamente por: {filha['descricao']} (ID {filha['id']})")
-                item_corrigido = dict(item)
-                item_corrigido["categoria_id"] = filha["id"]
-                itens_corrigidos.append(item_corrigido)
-            else:
-                print(f"    Escolha a subcategoria correta:")
-                for i, filha in enumerate(filhas, 1):
-                    print(f"      {i} - {filha['descricao']} (ID {filha['id']})")
-                print(f"      0 - CANCELAR operacao")
-
-                escolha = input("    Escolha: ").strip()
-                if escolha == "0" or not escolha:
-                    print("    Operacao cancelada pelo usuario.")
-                    return None
-
-                try:
-                    idx = int(escolha) - 1
-                    if 0 <= idx < len(filhas):
-                        filha = filhas[idx]
-                        print(f"    -> Usando: {filha['descricao']} (ID {filha['id']})")
-                        item_corrigido = dict(item)
-                        item_corrigido["categoria_id"] = filha["id"]
-                        itens_corrigidos.append(item_corrigido)
-                    else:
-                        print("    Opcao invalida. Operacao cancelada.")
-                        return None
-                except ValueError:
-                    print("    Entrada invalida. Operacao cancelada.")
-                    return None
-
-        return itens_corrigidos
+        # Bypass completo solicitado pelo usuario
+        return itens_lista
 
     # =============================================
     #  Acoes na API (delete / create cobranca)
@@ -329,12 +286,16 @@ class GestorCobrancas:
         """Cria uma nova cobranca via POST. Retorna dict ou None."""
         resultado = self._api_post("cobrancas", payload)
 
-        if resultado and isinstance(resultado, dict) and resultado.get("id"):
-            print(f"    Nova cobranca criada: ID {resultado['id']}, valor R${resultado.get('valor', '?')}")
-            return resultado
-        else:
-            print(f"    FALHA ao criar cobranca!")
-            return None
+        if resultado and isinstance(resultado, dict):
+            if resultado.get("id"):
+                print(f"    Nova cobranca criada: ID {resultado['id']}, valor R${resultado.get('valor', '?')}")
+                return resultado
+            elif "errors" in resultado:
+                # Retorna o erro para tratamento
+                return resultado
+        
+        print(f"    FALHA ao criar cobranca!")
+        return None
 
     # =============================================
     #  Busca e exclusao de lancamentos avulsos
@@ -596,30 +557,138 @@ class GestorCobrancas:
 
             # Recriar com todos os itens (ja validados)
             print(f"  Recriando com {len(itens_finais)} itens...")
-            payload = self._montar_payload_cobranca(cob, itens_finais)
-            nova_cob = self.criar_cobranca(payload)
+            
+            while True:
+                payload = self._montar_payload_cobranca(cob, itens_finais)
+                nova_cob = self.criar_cobranca(payload)
 
-            if nova_cob:
-                resumo["sucesso"] += 1
-                resumo["clientes_impactados"].add(cliente_id)
-                resumo["total_lancamentos"] += len(itens_finais)
-                resumo["detalhes"].append({
-                    "cobranca_id_original": cob_id,
-                    "cobranca_id_novo": nova_cob["id"],
-                    "cliente_id": cliente_id,
-                    "cliente_nome": mapa_clientes.get(cliente_id, str(cliente_id)),
-                    "status": "OK",
-                    "itens_count": len(itens_finais),
-                    "valor_novo": str(nova_cob.get("valor", "?")),
-                })
-            else:
-                resumo["falhas"] += 1
-                resumo["detalhes"].append({
-                    "cobranca_id_original": cob_id,
-                    "cliente_id": cliente_id,
-                    "cliente_nome": mapa_clientes.get(cliente_id, str(cliente_id)),
-                    "status": "FALHA_CREATE",
-                })
+                if nova_cob and nova_cob.get("id"):
+                    # SUCESSO
+                    resumo["sucesso"] += 1
+                    resumo["clientes_impactados"].add(cliente_id)
+                    resumo["total_lancamentos"] += len(itens_finais)
+                    resumo["detalhes"].append({
+                        "cobranca_id_original": cob_id,
+                        "cobranca_id_novo": nova_cob["id"],
+                        "cliente_id": cliente_id,
+                        "cliente_nome": mapa_clientes.get(cliente_id, str(cliente_id)),
+                        "status": "OK",
+                        "itens_count": len(itens_finais),
+                        "valor_novo": str(nova_cob.get("valor", "?")),
+                    })
+                    break # Sai do loop de retry e vai para proxima cobranca
+
+                elif nova_cob and "errors" in nova_cob:
+                    # ERRO DE VALIDACAO (422)
+                    errors = nova_cob.get("errors", {})
+                    itens_err = errors.get("itens", [])
+                    if not itens_err:
+                        # Erro nao e nos itens ou formato inesperado
+                        print(f"    ERRO DESCONHECIDO na validacao: {errors}")
+                        resumo["falhas"] += 1
+                        resumo["detalhes"].append({
+                            "cobranca_id_original": cob_id,
+                            "cliente_id": cliente_id,
+                            "status": "FALHA_CREATE_422_GENERICO",
+                        })
+                        break
+                    
+                    print(f"\n    ⚠ ERRO DE VALIDACAO DETECTADO PELA API!")
+                    print(f"    A API rejeitou alguns itens (provavelmente Categoria Pai).")
+                    
+                    correcoes_feitas = False
+                    
+                    for idx, err in enumerate(itens_err):
+                        if err is None:
+                            continue # Item valido
+                            
+                        # Identificar o item problematico
+                        if idx < len(itens_finais):
+                            item_problematico = itens_finais[idx]
+                            desc = item_problematico.get("descricao", "?")
+                            valor = item_problematico.get("valor", "?")
+                            cat_id_atual = item_problematico.get("categoria_id", "?")
+                            
+                            print(f"\n    >> ITEM PROBLEMATICO (Indice {idx+1}):")
+                            print(f"       Descricao: {desc}")
+                            print(f"       Valor: R${valor}")
+                            print(f"       Categoria ID Atual: {cat_id_atual}")
+                            print(f"       Erro: {err}")
+
+                            # === AUTO-CORRECAO: Tentar usar subcategoria ===
+                            mapa_pai = self._carregar_mapa_categorias_pai()
+                            if int(cat_id_atual) in mapa_pai:
+                                info_pai = mapa_pai[int(cat_id_atual)]
+                                filhas = info_pai["filhas"]
+                                if filhas:
+                                    # Usa estrategia: pega sempre a primeira filha
+                                    # TODO: Poderia ser mais inteligente (tentar match de nome), mas por ora resolve o block.
+                                    nova_filha = filhas[0]
+                                    print(f"       🔧 AUTO-RESOLUCAO: A API probiu a categoria pai.")
+                                    print(f"       -> Substituindo por subcategoria: '{nova_filha['descricao']}' (ID {nova_filha['id']})")
+                                    
+                                    item_problematico["categoria_id"] = nova_filha["id"]
+                                    correcoes_feitas = True
+                                    continue # Item corrigido, vai pro proximo
+                            
+                            # Se não conseguiu auto-corrigir, pede ajuda ao usuário
+                            print("       Opcoes:")
+                            print("       1 - Informar novo ID de Categoria (valido e folha)")
+                            print("       2 - Remover este item da cobranca")
+                            print("       0 - Desistir desta cobranca (vai constar como FALHA)")
+                            
+                            opcao = input("       Escolha: ").strip()
+                            
+                            if opcao == "1":
+                                novo_cat_id = input("       Digite o novo ID da Categoria: ").strip()
+                                if novo_cat_id and novo_cat_id.isdigit():
+                                    item_problematico["categoria_id"] = int(novo_cat_id)
+                                    print(f"       ✅ Categoria alterada para {novo_cat_id}")
+                                    correcoes_feitas = True
+                                else:
+                                    print("       ID invalido. Item mantido (vai falhar de novo).")
+                            
+                            elif opcao == "2":
+                                del itens_finais[idx]
+                                print("       🗑 Item removido da lista.")
+                                correcoes_feitas = True
+                                # Como alteramos o tamanho da lista, os indices mudam.
+                                # O jeito certo seria reiniciar o loop de validacao ou ajustar indices.
+                                # Mas aqui, o break abaixo reinicia o 'post', que recebera novo erro ou sucesso.
+                                # Porem, se removermos, o array de erro da API nao bate mais com indices.
+                                # Como estamos iterando sobre o array de ERRO da resposta anterior, 
+                                # e possivel que remover o item bagunce a correcao dos PROXIMOS itens deste mesmo loop?
+                                # Sim. Entao vamos parar de iterar erros e tentar reenviar IMEDIATAMENTE.
+                                break 
+                            
+                            elif opcao == "0":
+                                print("       Desistindo desta cobranca.")
+                                resumo["falhas"] += 1
+                                resumo["detalhes"].append({
+                                    "cobranca_id_original": cob_id,
+                                    "status": "ABORTADO_PELO_USUARIO",
+                                })
+                                # Precisamos sair do loop while True (retry) e do loop for (erros)
+                                # Flag para sair do while
+                                break
+                    
+                    if correcoes_feitas:
+                        print("\n    Tentando criar novamente com as correcoes...")
+                        continue # Volta ao inicio do while True
+                    else:
+                        # Usuario desistiu ou nao corrigiu nada
+                        break # Sai do while True, conta como falha
+                        
+                else:
+                    # ERRO GENERICO (None)
+                    resumo["falhas"] += 1
+                    resumo["detalhes"].append({
+                        "cobranca_id_original": cob_id,
+                        "cliente_id": cliente_id,
+                        "cliente_nome": mapa_clientes.get(cliente_id, str(cliente_id)),
+                        "status": "FALHA_CREATE_NET_ERROR",
+                    })
+                    break
 
         # === Resumo final ===
         data_execucao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
