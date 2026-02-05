@@ -117,6 +117,7 @@ class GestorCobrancas:
     def buscar_lancamentos_da_cobranca(self, cobranca):
         """
         Para uma cobranca, busca os dados completos de cada lancamento vinculado.
+        SE DER ERRO, PARA TUDO!
         """
         ids = self._parse_lancamento_ids(cobranca.get("lancamento_ids", ""))
         lancamentos = []
@@ -126,7 +127,17 @@ class GestorCobrancas:
             if dados and isinstance(dados, dict) and dados.get("id"):
                 lancamentos.append(dados)
             else:
-                print(f"    AVISO: Lancamento {lanc_id} nao encontrado ou erro ao buscar.")
+                print(f"\n{'='*60}")
+                print(f"⛔ ERRO CRITICO AO BUSCAR LANCAMENTOS - PARADA DE EMERGENCIA")
+                print(f"{'='*60}")
+                print(f"  Cliente ID: {cobranca.get('cliente_id')}")
+                print(f"  Cobranca ID: {cobranca.get('id')}")
+                print(f"  Lancamento Falho ID: {lanc_id}")
+                print(f"  Motivo: A API Granatum nao retornou os dados deste lancamento.")
+                print(f"          Possivel instabilidade ou lancamento ja inexistente.")
+                print(f"\n  A execucao foi INTERROMPIDA para evitar perda de dados.")
+                print(f"{'='*60}")
+                sys.exit(1) # Para o script na hora!
 
         return lancamentos
 
@@ -531,15 +542,41 @@ class GestorCobrancas:
 
         print("  Categorias OK.")
 
-        # === PASSO 5: Deletar e Recriar ===
+        # === PASSO 5: Deletar e Recriar cobrancas ===
         print("\n=== PASSO 5: Deletar e Recriar cobrancas ===")
+        resumo["ignoradas"] = 0
+
         for i, registro in enumerate(cobrancas_completas):
             cob = registro["cobranca"]
+            lancamentos_originais = registro["lancamentos"]
             itens_finais = itens_por_cobranca[i]
-            resumo["processadas"] += 1
-
+            
             cob_id = cob["id"]
             cliente_id = cob["cliente_id"]
+
+            # --- VERIFICACAO DE DUPLICIDADE (Seguranca) ---
+            descricao_alvo = novo_item.get("descricao", "").strip()
+            item_duplicado = False
+            for l in lancamentos_originais:
+                if l.get("descricao", "").strip() == descricao_alvo:
+                    item_duplicado = True
+                    break
+            
+            if item_duplicado:
+                print(f"\n--- Processando cobranca {cob_id} (cliente {cliente_id}) ---")
+                print(f"  ⚠ AVISO: Item '{descricao_alvo}' ja existe nesta cobranca. Pulando.")
+                resumo["ignoradas"] += 1
+                resumo["detalhes"].append({
+                    "cobranca_id_original": cob_id,
+                    "cliente_id": cliente_id,
+                    "cliente_nome": mapa_clientes.get(cliente_id, str(cliente_id)),
+                    "status": "SKIPPED_DUPLICATE",
+                    "motivo": f"Item '{descricao_alvo}' ja existe"
+                })
+                continue
+            # -----------------------------------------------
+
+            resumo["processadas"] += 1
 
             print(f"\n--- Processando cobranca {cob_id} (cliente {cliente_id}) ---")
 
@@ -700,6 +737,7 @@ class GestorCobrancas:
         print(f"  Data/Hora:            {data_execucao}")
         print(f"  Cobrancas recriadas:  {resumo['sucesso']}")
         print(f"  Cobrancas com falha:  {resumo['falhas']}")
+        print(f"  Cobrancas ignoradas:  {resumo.get('ignoradas', 0)} (Duplicadas)")
         print(f"  Lancamentos totais:   {resumo['total_lancamentos']}")
         print(f"  Clientes impactados:  {len(clientes_set)}")
         print(f"  Item adicionado:      {novo_item.get('descricao')}")
