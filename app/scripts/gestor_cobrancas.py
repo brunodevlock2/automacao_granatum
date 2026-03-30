@@ -117,7 +117,7 @@ class GestorCobrancas:
     def buscar_lancamentos_da_cobranca(self, cobranca):
         """
         Para uma cobranca, busca os dados completos de cada lancamento vinculado.
-        SE DER ERRO, PARA TUDO!
+        Lancamentos com 404 (inexistentes) sao ignorados com aviso.
         """
         ids = self._parse_lancamento_ids(cobranca.get("lancamento_ids", ""))
         lancamentos = []
@@ -127,17 +127,7 @@ class GestorCobrancas:
             if dados and isinstance(dados, dict) and dados.get("id"):
                 lancamentos.append(dados)
             else:
-                print(f"\n{'='*60}")
-                print(f"⛔ ERRO CRITICO AO BUSCAR LANCAMENTOS - PARADA DE EMERGENCIA")
-                print(f"{'='*60}")
-                print(f"  Cliente ID: {cobranca.get('cliente_id')}")
-                print(f"  Cobranca ID: {cobranca.get('id')}")
-                print(f"  Lancamento Falho ID: {lanc_id}")
-                print(f"  Motivo: A API Granatum nao retornou os dados deste lancamento.")
-                print(f"          Possivel instabilidade ou lancamento ja inexistente.")
-                print(f"\n  A execucao foi INTERROMPIDA para evitar perda de dados.")
-                print(f"{'='*60}")
-                sys.exit(1) # Para o script na hora!
+                print(f"  ⚠ Lancamento {lanc_id} nao encontrado na API (404 ou inexistente). Ignorando e continuando...")
 
         return lancamentos
 
@@ -190,7 +180,7 @@ class GestorCobrancas:
 
         return item
 
-    def _montar_payload_cobranca(self, cobranca_original, itens_lista):
+    def _montar_payload_cobranca(self, cobranca_original, itens_lista, dias_para_emissao=None):
         """
         Monta o payload para POST /cobrancas com base na cobranca original
         e uma lista de itens.
@@ -201,8 +191,14 @@ class GestorCobrancas:
             "data_vencimento": cobranca_original["data_vencimento"],
             "tipo_cobranca": config.TIPO_COBRANCA_PADRAO,
             "pagamento_automatico": True,
+            "cobrar_juros": False,
             "itens": itens_lista,
         }
+
+        if dias_para_emissao is not None:
+            # tipo_emissao 2 = Agendar/Emitir de acordo com dias_para_emissao
+            payload["dias_para_emissao"] = dias_para_emissao
+            payload["tipo_emissao"] = 2
 
         return payload
 
@@ -442,7 +438,8 @@ class GestorCobrancas:
         return dict(novo_item), False
 
     def adicionar_lancamento_a_cobrancas(self, clientes_ids, data_inicio, data_fim,
-                                          novo_item, conta_id=None, mapa_clientes=None):
+                                          novo_item, conta_id=None, mapa_clientes=None,
+                                          dias_para_emissao=None):
         """
         Adiciona um lancamento a cobrancas existentes.
 
@@ -596,7 +593,7 @@ class GestorCobrancas:
             print(f"  Recriando com {len(itens_finais)} itens...")
             
             while True:
-                payload = self._montar_payload_cobranca(cob, itens_finais)
+                payload = self._montar_payload_cobranca(cob, itens_finais, dias_para_emissao)
                 nova_cob = self.criar_cobranca(payload)
 
                 if nova_cob and nova_cob.get("id"):

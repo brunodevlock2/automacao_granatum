@@ -79,6 +79,20 @@
                 "parent_id": 308871,
                 "ativo": true,
                 "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 363245,
+                "descricao": "Topografia",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
+            },
+            {
+                "id": 363253,
+                "descricao": "Caldeira - 3ªRegião",
+                "parent_id": 308871,
+                "ativo": true,
+                "centros_custo_lucro_filhos": []
             }
         ]
     },

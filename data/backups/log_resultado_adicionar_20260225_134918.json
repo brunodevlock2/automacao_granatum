@@ -1,0 +1,32 @@
+{
+    "data_execucao": "2026-02-25 13:49:18",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Teste Bruno 01",
+        "categoria_id": 2384107,
+        "valor": 20.0,
+        "centro_custo_lucro_id": 308910
+    },
+    "periodo": {
+        "data_inicio": "2026-03-01",
+        "data_fim": "2026-03-31"
+    },
+    "cobrancas_recriadas": 1,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 18,
+    "clientes_impactados": 1,
+    "lista_clientes": [
+        3146669
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3547154,
+            "cobranca_id_novo": 3547228,
+            "cliente_id": 3146669,
+            "cliente_nome": "Bruno André Scatena - Casal",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "660.53"
+        }
+    ]
+}

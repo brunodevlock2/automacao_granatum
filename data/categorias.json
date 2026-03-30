@@ -49,11 +49,40 @@
     {
         "id": 2521767,
         "descricao": "Administrativo - Receita",
-        "cor": "#993399",
+        "cor": "#0f4019",
         "wgi_usuario_id": 106117,
         "ativo": true,
         "tipo_categoria_id": 2,
-        "categorias_filhas": []
+        "categorias_filhas": [
+            {
+                "id": 2148095,
+                "descricao": "Alimentação - Receita",
+                "cor": "#2dbf4b",
+                "parent_id": 2521767,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": [
+                    {
+                        "id": 2384046,
+                        "descricao": "Alimentação  - Recebido outros Núcleos",
+                        "cor": "#36e55a",
+                        "parent_id": 2148095,
+                        "ativo": true,
+                        "tipo_categoria_id": 2,
+                        "categorias_filhas": []
+                    }
+                ]
+            },
+            {
+                "id": 2401581,
+                "descricao": "Alimentação - Organ - Receita",
+                "cor": "#36e55a",
+                "parent_id": 2521767,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            }
+        ]
     },
     {
         "id": 2148098,
@@ -64,9 +93,27 @@
         "tipo_categoria_id": 2,
         "categorias_filhas": [
             {
+                "id": 2148109,
+                "descricao": "Alojamento - Receita",
+                "cor": "#2dbf4b",
+                "parent_id": 2148098,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
                 "id": 2521758,
                 "descricao": "Topografia",
                 "cor": "#2dbf4b",
+                "parent_id": 2148098,
+                "ativo": true,
+                "tipo_categoria_id": 2,
+                "categorias_filhas": []
+            },
+            {
+                "id": 2534130,
+                "descricao": "Salão preparo região",
+                "cor": "#0769ff",
                 "parent_id": 2148098,
                 "ativo": true,
                 "tipo_categoria_id": 2,
@@ -103,49 +150,12 @@
         "categorias_filhas": []
     },
     {
-        "id": 2401581,
-        "descricao": "Alimentação - Organ - Receita",
-        "cor": "#36e55a",
-        "wgi_usuario_id": 106117,
-        "ativo": true,
-        "tipo_categoria_id": 2,
-        "categorias_filhas": []
-    },
-    {
-        "id": 2148095,
-        "descricao": "Alimentação - Receita",
-        "cor": "#2dbf4b",
-        "wgi_usuario_id": 106117,
-        "ativo": true,
-        "tipo_categoria_id": 2,
-        "categorias_filhas": [
-            {
-                "id": 2384046,
-                "descricao": "Alimentação  - Recebido outros Núcleos",
-                "cor": "#36e55a",
-                "parent_id": 2148095,
-                "ativo": true,
-                "tipo_categoria_id": 2,
-                "categorias_filhas": []
-            }
-        ]
-    },
-    {
         "id": 2148121,
         "descricao": "Alojamento - Despesa",
         "cor": "#ff1800",
         "wgi_usuario_id": 106117,
         "ativo": true,
         "tipo_categoria_id": 1,
-        "categorias_filhas": []
-    },
-    {
-        "id": 2148109,
-        "descricao": "Alojamento - Receita",
-        "cor": "#2dbf4b",
-        "wgi_usuario_id": 106117,
-        "ativo": true,
-        "tipo_categoria_id": 2,
         "categorias_filhas": []
     },
     {

@@ -433,6 +433,9 @@ def executar_adicionar(gestor):
 
     ccl_id = escolher_centro_custo("Centro de Custo")
 
+    dias_emissao_input = input("Insira quantos dias para emissão das cobranças (Enter = padrão): ").strip()
+    dias_para_emissao = int(dias_emissao_input) if dias_emissao_input.isdigit() else None
+
     novo_item = {
         "descricao": descricao,
         "categoria_id": categoria_id,
@@ -445,6 +448,8 @@ def executar_adicionar(gestor):
     print(f"\nLista: {nome_lista}")
     print(f"Novo item: {novo_item}")
     print(f"  * Clientes com 'Casal' no nome terao valor x2 (R${valor} -> R${valor * 2})")
+    if dias_para_emissao is not None:
+        print(f"  * Emissao agendada para: {dias_para_emissao} dias antes do vencimento")
 
     gestor.adicionar_lancamento_a_cobrancas(
         clientes_ids=clientes_ids,
@@ -453,6 +458,7 @@ def executar_adicionar(gestor):
         novo_item=novo_item,
         conta_id=config.CONTA_ID_PADRAO,
         mapa_clientes=mapa_clientes,
+        dias_para_emissao=dias_para_emissao,
     )
 
 

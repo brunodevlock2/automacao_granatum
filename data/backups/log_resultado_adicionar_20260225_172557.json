@@ -1,0 +1,32 @@
+{
+    "data_execucao": "2026-02-25 17:25:57",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Teste Bruno 3",
+        "categoria_id": 2384107,
+        "valor": 22.0,
+        "centro_custo_lucro_id": 308910
+    },
+    "periodo": {
+        "data_inicio": "2026-03-01",
+        "data_fim": "2026-03-31"
+    },
+    "cobrancas_recriadas": 1,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 17,
+    "clientes_impactados": 1,
+    "lista_clientes": [
+        3146650
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3547588,
+            "cobranca_id_novo": 3547589,
+            "cliente_id": 3146650,
+            "cliente_nome": "Adilson Barbosa de Oliveira - Casal",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "776.53"
+        }
+    ]
+}
