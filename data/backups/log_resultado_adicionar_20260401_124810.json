@@ -1,0 +1,1060 @@
+{
+    "data_execucao": "2026-04-01 12:48:10",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)",
+        "categoria_id": 2534130,
+        "valor": 20.0,
+        "centro_custo_lucro_id": 363253
+    },
+    "periodo": {
+        "data_inicio": "2026-04-01",
+        "data_fim": "2026-04-30"
+    },
+    "cobrancas_recriadas": 101,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 1258,
+    "clientes_impactados": 101,
+    "lista_clientes": [
+        3146752,
+        3146754,
+        3146755,
+        3146756,
+        3146758,
+        3146759,
+        3146760,
+        3558408,
+        3146761,
+        3146763,
+        3146764,
+        3146765,
+        3146766,
+        3146767,
+        3679765,
+        3371061,
+        3371065,
+        3542615,
+        3542643,
+        3542647,
+        3720323,
+        3312976,
+        3295104,
+        3295108,
+        3210136,
+        3146650,
+        3146651,
+        3146653,
+        3146654,
+        3146655,
+        3146656,
+        3146658,
+        3146659,
+        3146661,
+        3146662,
+        3146664,
+        3146665,
+        3146666,
+        3146668,
+        3146669,
+        3146670,
+        3146671,
+        3146672,
+        3146673,
+        3146675,
+        3146676,
+        3146678,
+        3146679,
+        3146680,
+        3146683,
+        3146684,
+        3146685,
+        3146687,
+        3146688,
+        3146689,
+        3146690,
+        3751875,
+        3146692,
+        3146693,
+        3146694,
+        3146695,
+        3146696,
+        3751880,
+        3146697,
+        3146699,
+        3146698,
+        3146701,
+        3146703,
+        3146706,
+        3146708,
+        3146709,
+        3146710,
+        3146712,
+        3146713,
+        3146715,
+        3146716,
+        3146717,
+        3146718,
+        3146719,
+        3146720,
+        3146721,
+        3146722,
+        3146725,
+        3146726,
+        3146728,
+        3146729,
+        3146731,
+        3146732,
+        3146733,
+        3146735,
+        3146737,
+        3146738,
+        3273204,
+        3146743,
+        3146744,
+        3146745,
+        3146746,
+        3146747,
+        3146749,
+        3146750,
+        3146751
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3137374,
+            "cobranca_id_novo": 3666272,
+            "cliente_id": 3146752,
+            "cliente_nome": "3146752",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "400.21"
+        },
+        {
+            "cobranca_id_original": 3120872,
+            "cobranca_id_novo": 3666273,
+            "cliente_id": 3146754,
+            "cliente_nome": "3146754",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "280.21"
+        },
+        {
+            "cobranca_id_original": 3121030,
+            "cobranca_id_novo": 3666274,
+            "cliente_id": 3146755,
+            "cliente_nome": "3146755",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "341.21"
+        },
+        {
+            "cobranca_id_original": 3120953,
+            "cobranca_id_novo": 3666275,
+            "cliente_id": 3146756,
+            "cliente_nome": "3146756",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "535.53"
+        },
+        {
+            "cobranca_id_original": 3121194,
+            "cobranca_id_novo": 3666276,
+            "cliente_id": 3146758,
+            "cliente_nome": "3146758",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "361.21"
+        },
+        {
+            "cobranca_id_original": 3121268,
+            "cobranca_id_novo": 3666277,
+            "cliente_id": 3146759,
+            "cliente_nome": "3146759",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "431.21"
+        },
+        {
+            "cobranca_id_original": 3121343,
+            "cobranca_id_novo": 3666278,
+            "cliente_id": 3146760,
+            "cliente_nome": "3146760",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "444.21"
+        },
+        {
+            "cobranca_id_original": 3355403,
+            "cobranca_id_novo": 3666279,
+            "cliente_id": 3558408,
+            "cliente_nome": "3558408",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "556.53"
+        },
+        {
+            "cobranca_id_original": 3553688,
+            "cliente_id": 3805703,
+            "cliente_nome": "3805703",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3304593,
+            "cobranca_id_novo": 3666280,
+            "cliente_id": 3146763,
+            "cliente_nome": "3146763",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3121640,
+            "cobranca_id_novo": 3666281,
+            "cliente_id": 3146764,
+            "cliente_nome": "3146764",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "324.21"
+        },
+        {
+            "cobranca_id_original": 3189486,
+            "cobranca_id_novo": 3666282,
+            "cliente_id": 3146765,
+            "cliente_nome": "3146765",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "387.21"
+        },
+        {
+            "cobranca_id_original": 3121416,
+            "cobranca_id_novo": 3666283,
+            "cliente_id": 3146761,
+            "cliente_nome": "3146761",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3121893,
+            "cobranca_id_novo": 3666284,
+            "cliente_id": 3146767,
+            "cliente_nome": "3146767",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "383.21"
+        },
+        {
+            "cobranca_id_original": 3553614,
+            "cliente_id": 3805712,
+            "cliente_nome": "3805712",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3121818,
+            "cobranca_id_novo": 3666285,
+            "cliente_id": 3146766,
+            "cliente_nome": "3146766",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "831.21"
+        },
+        {
+            "cobranca_id_original": 3478744,
+            "cobranca_id_novo": 3666286,
+            "cliente_id": 3679765,
+            "cliente_nome": "3679765",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "114.21"
+        },
+        {
+            "cobranca_id_original": 3291016,
+            "cobranca_id_novo": 3666287,
+            "cliente_id": 3371061,
+            "cliente_nome": "3371061",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "214.00"
+        },
+        {
+            "cobranca_id_original": 3290453,
+            "cobranca_id_novo": 3666288,
+            "cliente_id": 3371065,
+            "cliente_nome": "3371065",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3340337,
+            "cobranca_id_novo": 3666289,
+            "cliente_id": 3542615,
+            "cliente_nome": "3542615",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "862.21"
+        },
+        {
+            "cobranca_id_original": 3340410,
+            "cobranca_id_novo": 3666290,
+            "cliente_id": 3542643,
+            "cliente_nome": "3542643",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "85.08"
+        },
+        {
+            "cobranca_id_original": 3340483,
+            "cobranca_id_novo": 3666291,
+            "cliente_id": 3542647,
+            "cliente_nome": "3542647",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3496757,
+            "cobranca_id_novo": 3666292,
+            "cliente_id": 3720323,
+            "cliente_nome": "3720323",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3569115,
+            "cliente_id": 3830922,
+            "cliente_nome": "3830922",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3519880,
+            "cobranca_id_novo": 3666293,
+            "cliente_id": 3751875,
+            "cliente_nome": "3751875",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "207.00"
+        },
+        {
+            "cobranca_id_original": 3245961,
+            "cobranca_id_novo": 3666295,
+            "cliente_id": 3312976,
+            "cliente_nome": "3312976",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3229620,
+            "cobranca_id_novo": 3666296,
+            "cliente_id": 3295104,
+            "cliente_nome": "3295104",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "144.78"
+        },
+        {
+            "cobranca_id_original": 3229693,
+            "cobranca_id_novo": 3666297,
+            "cliente_id": 3295108,
+            "cliente_nome": "3295108",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3165652,
+            "cobranca_id_novo": 3666298,
+            "cliente_id": 3210136,
+            "cliente_nome": "3210136",
+            "status": "OK",
+            "itens_count": 9,
+            "valor_novo": "424.53"
+        },
+        {
+            "cobranca_id_original": 3137447,
+            "cobranca_id_novo": 3666299,
+            "cliente_id": 3146650,
+            "cliente_nome": "3146650",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "841.53"
+        },
+        {
+            "cobranca_id_original": 3125011,
+            "cobranca_id_novo": 3666300,
+            "cliente_id": 3146651,
+            "cliente_nome": "3146651",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "610.53"
+        },
+        {
+            "cobranca_id_original": 3125202,
+            "cobranca_id_novo": 3666301,
+            "cliente_id": 3146653,
+            "cliente_nome": "3146653",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "644.53"
+        },
+        {
+            "cobranca_id_original": 3125580,
+            "cobranca_id_novo": 3666302,
+            "cliente_id": 3146654,
+            "cliente_nome": "3146654",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3125654,
+            "cobranca_id_novo": 3666303,
+            "cliente_id": 3146655,
+            "cliente_nome": "3146655",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "680.53"
+        },
+        {
+            "cobranca_id_original": 3131908,
+            "cobranca_id_novo": 3666304,
+            "cliente_id": 3146656,
+            "cliente_nome": "3146656",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "931.53"
+        },
+        {
+            "cobranca_id_original": 3132066,
+            "cobranca_id_novo": 3666305,
+            "cliente_id": 3146658,
+            "cliente_nome": "3146658",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "315.21"
+        },
+        {
+            "cobranca_id_original": 3132143,
+            "cobranca_id_novo": 3666306,
+            "cliente_id": 3146659,
+            "cliente_nome": "3146659",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "287.21"
+        },
+        {
+            "cobranca_id_original": 3132378,
+            "cobranca_id_novo": 3666307,
+            "cliente_id": 3146661,
+            "cliente_nome": "3146661",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "670.53"
+        },
+        {
+            "cobranca_id_original": 3132537,
+            "cobranca_id_novo": 3666308,
+            "cliente_id": 3146662,
+            "cliente_nome": "3146662",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "431.53"
+        },
+        {
+            "cobranca_id_original": 3132770,
+            "cobranca_id_novo": 3666309,
+            "cliente_id": 3146664,
+            "cliente_nome": "3146664",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "464.21"
+        },
+        {
+            "cobranca_id_original": 3132849,
+            "cobranca_id_novo": 3666310,
+            "cliente_id": 3146665,
+            "cliente_nome": "3146665",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "571.53"
+        },
+        {
+            "cobranca_id_original": 3137869,
+            "cobranca_id_novo": 3666311,
+            "cliente_id": 3146666,
+            "cliente_nome": "3146666",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "269.21"
+        },
+        {
+            "cobranca_id_original": 3133936,
+            "cobranca_id_novo": 3666312,
+            "cliente_id": 3146668,
+            "cliente_nome": "3146668",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "564.21"
+        },
+        {
+            "cobranca_id_original": 3118571,
+            "cobranca_id_novo": 3666313,
+            "cliente_id": 3146669,
+            "cliente_nome": "3146669",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "718.53"
+        },
+        {
+            "cobranca_id_original": 3133204,
+            "cobranca_id_novo": 3666314,
+            "cliente_id": 3146670,
+            "cliente_nome": "3146670",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "623.27"
+        },
+        {
+            "cobranca_id_original": 3132985,
+            "cobranca_id_novo": 3666315,
+            "cliente_id": 3146671,
+            "cliente_nome": "3146671",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "320.21"
+        },
+        {
+            "cobranca_id_original": 3133058,
+            "cobranca_id_novo": 3666316,
+            "cliente_id": 3146672,
+            "cliente_nome": "3146672",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "1590.53"
+        },
+        {
+            "cobranca_id_original": 3134011,
+            "cobranca_id_novo": 3666317,
+            "cliente_id": 3146673,
+            "cliente_nome": "3146673",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "446.72"
+        },
+        {
+            "cobranca_id_original": 3134157,
+            "cobranca_id_novo": 3666318,
+            "cliente_id": 3146675,
+            "cliente_nome": "3146675",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "216.53"
+        },
+        {
+            "cobranca_id_original": 3134785,
+            "cobranca_id_novo": 3666319,
+            "cliente_id": 3146676,
+            "cliente_nome": "3146676",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "403.21"
+        },
+        {
+            "cobranca_id_original": 3136118,
+            "cobranca_id_novo": 3666320,
+            "cliente_id": 3146678,
+            "cliente_nome": "3146678",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "703.53"
+        },
+        {
+            "cobranca_id_original": 3134548,
+            "cobranca_id_novo": 3666321,
+            "cliente_id": 3146679,
+            "cliente_nome": "3146679",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "786.53"
+        },
+        {
+            "cobranca_id_original": 3134623,
+            "cobranca_id_novo": 3666322,
+            "cliente_id": 3146680,
+            "cliente_nome": "3146680",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "629.21"
+        },
+        {
+            "cobranca_id_original": 3120172,
+            "cobranca_id_novo": 3666323,
+            "cliente_id": 3146683,
+            "cliente_nome": "3146683",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3120617,
+            "cobranca_id_novo": 3666324,
+            "cliente_id": 3146684,
+            "cliente_nome": "3146684",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3122555,
+            "cobranca_id_novo": 3666325,
+            "cliente_id": 3146685,
+            "cliente_nome": "3146685",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "261.21"
+        },
+        {
+            "cobranca_id_original": 3126258,
+            "cobranca_id_novo": 3666326,
+            "cliente_id": 3146687,
+            "cliente_nome": "3146687",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "655.21"
+        },
+        {
+            "cobranca_id_original": 3126331,
+            "cobranca_id_novo": 3666327,
+            "cliente_id": 3146688,
+            "cliente_nome": "3146688",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "579.53"
+        },
+        {
+            "cobranca_id_original": 3126407,
+            "cobranca_id_novo": 3666328,
+            "cliente_id": 3146689,
+            "cliente_nome": "3146689",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "669.53"
+        },
+        {
+            "cobranca_id_original": 3126480,
+            "cobranca_id_novo": 3666329,
+            "cliente_id": 3146690,
+            "cliente_nome": "3146690",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3522621,
+            "cobranca_id_novo": 3666330,
+            "cliente_id": 3146692,
+            "cliente_nome": "3146692",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "229.21"
+        },
+        {
+            "cobranca_id_original": 3133276,
+            "cobranca_id_novo": 3666331,
+            "cliente_id": 3146693,
+            "cliente_nome": "3146693",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3133350,
+            "cobranca_id_novo": 3666332,
+            "cliente_id": 3146694,
+            "cliente_nome": "3146694",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "219.21"
+        },
+        {
+            "cobranca_id_original": 3136634,
+            "cobranca_id_novo": 3666333,
+            "cliente_id": 3146695,
+            "cliente_nome": "3146695",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3133424,
+            "cobranca_id_novo": 3666334,
+            "cliente_id": 3146696,
+            "cliente_nome": "3146696",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "526.21"
+        },
+        {
+            "cobranca_id_original": 3519955,
+            "cobranca_id_novo": 3666335,
+            "cliente_id": 3751880,
+            "cliente_nome": "3751880",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "95.21"
+        },
+        {
+            "cobranca_id_original": 3133497,
+            "cobranca_id_novo": 3666336,
+            "cliente_id": 3146697,
+            "cliente_nome": "3146697",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "293.21"
+        },
+        {
+            "cobranca_id_original": 3210688,
+            "cobranca_id_novo": 3666337,
+            "cliente_id": 3146699,
+            "cliente_nome": "3146699",
+            "status": "OK",
+            "itens_count": 8,
+            "valor_novo": "71.21"
+        },
+        {
+            "cobranca_id_original": 3133643,
+            "cobranca_id_novo": 3666338,
+            "cliente_id": 3146698,
+            "cliente_nome": "3146698",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "394.21"
+        },
+        {
+            "cobranca_id_original": 3137002,
+            "cobranca_id_novo": 3666339,
+            "cliente_id": 3146701,
+            "cliente_nome": "3146701",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "264.21"
+        },
+        {
+            "cobranca_id_original": 3137075,
+            "cobranca_id_novo": 3666340,
+            "cliente_id": 3146703,
+            "cliente_nome": "3146703",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3136414,
+            "cobranca_id_novo": 3666341,
+            "cliente_id": 3146706,
+            "cliente_nome": "3146706",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "597.53"
+        },
+        {
+            "cobranca_id_original": 3136268,
+            "cobranca_id_novo": 3666342,
+            "cliente_id": 3146708,
+            "cliente_nome": "3146708",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "334.53"
+        },
+        {
+            "cobranca_id_original": 3136487,
+            "cobranca_id_novo": 3666343,
+            "cliente_id": 3146709,
+            "cliente_nome": "3146709",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "288.21"
+        },
+        {
+            "cobranca_id_original": 3136341,
+            "cobranca_id_novo": 3666344,
+            "cliente_id": 3146710,
+            "cliente_nome": "3146710",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "556.53"
+        },
+        {
+            "cobranca_id_original": 3123740,
+            "cobranca_id_novo": 3666345,
+            "cliente_id": 3146712,
+            "cliente_nome": "3146712",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "225.96"
+        },
+        {
+            "cobranca_id_original": 3123813,
+            "cobranca_id_novo": 3666346,
+            "cliente_id": 3146713,
+            "cliente_nome": "3146713",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "306.21"
+        },
+        {
+            "cobranca_id_original": 3124073,
+            "cobranca_id_novo": 3666347,
+            "cliente_id": 3146715,
+            "cliente_nome": "3146715",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "567.53"
+        },
+        {
+            "cobranca_id_original": 3124195,
+            "cobranca_id_novo": 3666348,
+            "cliente_id": 3146716,
+            "cliente_nome": "3146716",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "209.21"
+        },
+        {
+            "cobranca_id_original": 3124331,
+            "cobranca_id_novo": 3666349,
+            "cliente_id": 3146717,
+            "cliente_nome": "3146717",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "213.36"
+        },
+        {
+            "cobranca_id_original": 3124443,
+            "cobranca_id_novo": 3666350,
+            "cliente_id": 3146718,
+            "cliente_nome": "3146718",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "336.21"
+        },
+        {
+            "cobranca_id_original": 3124529,
+            "cobranca_id_novo": 3666351,
+            "cliente_id": 3146719,
+            "cliente_nome": "3146719",
+            "status": "OK",
+            "itens_count": 9,
+            "valor_novo": "150.09"
+        },
+        {
+            "cobranca_id_original": 3124702,
+            "cobranca_id_novo": 3666352,
+            "cliente_id": 3146720,
+            "cliente_nome": "3146720",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "506.53"
+        },
+        {
+            "cobranca_id_original": 3124857,
+            "cobranca_id_novo": 3666353,
+            "cliente_id": 3146721,
+            "cliente_nome": "3146721",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "362.21"
+        },
+        {
+            "cobranca_id_original": 3124938,
+            "cobranca_id_novo": 3666354,
+            "cliente_id": 3146722,
+            "cliente_nome": "3146722",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "294.32"
+        },
+        {
+            "cobranca_id_original": 3165391,
+            "cobranca_id_novo": 3666355,
+            "cliente_id": 3146725,
+            "cliente_nome": "3146725",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3125807,
+            "cobranca_id_novo": 3666356,
+            "cliente_id": 3146726,
+            "cliente_nome": "3146726",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "610.53"
+        },
+        {
+            "cobranca_id_original": 3129857,
+            "cobranca_id_novo": 3666357,
+            "cliente_id": 3146728,
+            "cliente_nome": "3146728",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "580.53"
+        },
+        {
+            "cobranca_id_original": 3130084,
+            "cobranca_id_novo": 3666358,
+            "cliente_id": 3146729,
+            "cliente_nome": "3146729",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "690.53"
+        },
+        {
+            "cobranca_id_original": 3130230,
+            "cobranca_id_novo": 3666359,
+            "cliente_id": 3146731,
+            "cliente_nome": "3146731",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "286.21"
+        },
+        {
+            "cobranca_id_original": 3565548,
+            "cliente_id": 3146731,
+            "cliente_nome": "3146731",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3130303,
+            "cobranca_id_novo": 3666360,
+            "cliente_id": 3146732,
+            "cliente_nome": "3146732",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "1078.53"
+        },
+        {
+            "cobranca_id_original": 3130377,
+            "cobranca_id_novo": 3666361,
+            "cliente_id": 3146733,
+            "cliente_nome": "3146733",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "194.00"
+        },
+        {
+            "cobranca_id_original": 3351996,
+            "cobranca_id_novo": 3666362,
+            "cliente_id": 3146735,
+            "cliente_nome": "3146735",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3130685,
+            "cobranca_id_novo": 3666363,
+            "cliente_id": 3146737,
+            "cliente_nome": "3146737",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "591.53"
+        },
+        {
+            "cobranca_id_original": 3130758,
+            "cobranca_id_novo": 3666364,
+            "cliente_id": 3146738,
+            "cliente_nome": "3146738",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "225.21"
+        },
+        {
+            "cobranca_id_original": 3210503,
+            "cobranca_id_novo": 3666365,
+            "cliente_id": 3273204,
+            "cliente_nome": "3273204",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "239.21"
+        },
+        {
+            "cobranca_id_original": 3119403,
+            "cobranca_id_novo": 3666366,
+            "cliente_id": 3146743,
+            "cliente_nome": "3146743",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "708.53"
+        },
+        {
+            "cobranca_id_original": 3119880,
+            "cobranca_id_novo": 3666367,
+            "cliente_id": 3146744,
+            "cliente_nome": "3146744",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "165.21"
+        },
+        {
+            "cobranca_id_original": 3120099,
+            "cobranca_id_novo": 3666368,
+            "cliente_id": 3146745,
+            "cliente_nome": "3146745",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "656.53"
+        },
+        {
+            "cobranca_id_original": 3139229,
+            "cobranca_id_novo": 3666369,
+            "cliente_id": 3146746,
+            "cliente_nome": "3146746",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "319.21"
+        },
+        {
+            "cobranca_id_original": 3120245,
+            "cobranca_id_novo": 3666370,
+            "cliente_id": 3146747,
+            "cliente_nome": "3146747",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "170.93"
+        },
+        {
+            "cobranca_id_original": 3120396,
+            "cobranca_id_novo": 3666371,
+            "cliente_id": 3146749,
+            "cliente_nome": "3146749",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "130.24"
+        },
+        {
+            "cobranca_id_original": 3120469,
+            "cobranca_id_novo": 3666372,
+            "cliente_id": 3146750,
+            "cliente_nome": "3146750",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3120542,
+            "cobranca_id_novo": 3666373,
+            "cliente_id": 3146751,
+            "cliente_nome": "3146751",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "463.53"
+        }
+    ]
+}

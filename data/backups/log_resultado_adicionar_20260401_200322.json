@@ -1,0 +1,217 @@
+{
+    "data_execucao": "2026-04-01 20:03:22",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)",
+        "categoria_id": 2534130,
+        "valor": 40.0,
+        "centro_custo_lucro_id": 363253
+    },
+    "periodo": {
+        "data_inicio": "2026-04-01",
+        "data_fim": "2026-04-30"
+    },
+    "cobrancas_recriadas": 0,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 0,
+    "clientes_impactados": 0,
+    "lista_clientes": [],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3667052,
+            "cliente_id": 3146756,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667053,
+            "cliente_id": 3210136,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667054,
+            "cliente_id": 3146650,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667055,
+            "cliente_id": 3146651,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667056,
+            "cliente_id": 3146653,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667057,
+            "cliente_id": 3146655,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667058,
+            "cliente_id": 3146656,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667059,
+            "cliente_id": 3146662,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667060,
+            "cliente_id": 3146665,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667061,
+            "cliente_id": 3146669,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667062,
+            "cliente_id": 3146670,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667063,
+            "cliente_id": 3146672,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667064,
+            "cliente_id": 3146675,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667065,
+            "cliente_id": 3146678,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3666321,
+            "cliente_id": 3146679,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667066,
+            "cliente_id": 3146688,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667067,
+            "cliente_id": 3146689,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667068,
+            "cliente_id": 3146706,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667069,
+            "cliente_id": 3146708,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667070,
+            "cliente_id": 3146710,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667071,
+            "cliente_id": 3146715,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667072,
+            "cliente_id": 3146720,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667075,
+            "cliente_id": 3146729,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3666360,
+            "cliente_id": 3146732,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667076,
+            "cliente_id": 3146737,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667077,
+            "cliente_id": 3146743,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667078,
+            "cliente_id": 3146745,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        },
+        {
+            "cobranca_id_original": 3667079,
+            "cliente_id": 3146751,
+            "cliente_nome": "Cliente",
+            "status": "SKIPPED_DUPLICATE",
+            "motivo": "Item 'Contribuição salão de preparos e encontros da 3a região (8 parcelas de R$20,00 por pessoa - De Março a Outubro de 2026)' ja existe"
+        }
+    ]
+}
