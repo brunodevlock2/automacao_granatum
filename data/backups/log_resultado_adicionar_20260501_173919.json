@@ -1,0 +1,32 @@
+{
+    "data_execucao": "2026-05-01 17:39:19",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Taxa de preparo Núcleo Divino Manto (R$34,00 por pessoa)",
+        "categoria_id": 2384107,
+        "valor": 34.0,
+        "centro_custo_lucro_id": 308910
+    },
+    "periodo": {
+        "data_inicio": "2026-05-01",
+        "data_fim": "2026-05-31"
+    },
+    "cobrancas_recriadas": 1,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 18,
+    "clientes_impactados": 1,
+    "lista_clientes": [
+        3146669
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3685795,
+            "cobranca_id_novo": 3686655,
+            "cliente_id": 3146669,
+            "cliente_nome": "Bruno André Scatena - Casal",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "678.53"
+        }
+    ]
+}
