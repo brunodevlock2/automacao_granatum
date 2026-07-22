@@ -1,0 +1,606 @@
+Introdução
+API para integração com o Granatum Financeiro
+
+Configuração
+Seguem regras de configuração para o uso da API:
+
+Header "User-Agent"
+O header User-Agent deve ser enviado em todas as requisições. Muitas bibliotecas de integração já adicionam esse header automaticamente. Caso a sua implementação não faça isso, inclua manualmente um identificador, substituindo MeuAplicativo pelo nome do seu sistema:
+- User-Agent: MeuAplicativo/1.0
+
+Header "Content-Type"
+O header Content-Type é obrigatório em todas as requisições que enviam dados, como POST e PUT. Para os demais métodos (como GET e DELETE), o uso desse header é opcional.
+- Content-Type: application/x-www-form-urlencoded
+
+Limites de Requisições (Rate Limiting)
+Para garantir a segurança e a disponibilidade do serviço para todos os usuários, aplicamos limites de requisições à API. Recomendamos implementar regras de throttling na sua aplicação para evitar bloqueios automáticos.
+
+Os limites são:
+
+100 requisições por minuto
+200 requisições a cada 5 minutos
+Autenticação
+Para ocorrer a comunicação com a API será necessário utilizar o Access Token.
+
+Esse token está disponível no Granatum dentro de Configurações -> Minha Empresa -> Sidebar(API). Apenas usuários com o perfil Super admin possuem acesso a essa tela.
+
+Todas as requisições devem ter obrigatoriamente o Access Token na Query String para funcionar.
+
+Lançamentos
+Criar um lançamento
+Cria um lançamento que pode ser uma Conta a Pagar (despesa) ou uma Conta a Receber (receita).
+
+Método e URL
+POST https://api.granatum.com.br/v1/lancamentos
+Query String
+access_token=[token_cliente_granatum]
+Substitua inclusive os colchetes
+
+Paramêtros
+Campo	Descrição	Tipo	Obrigatoriedade
+descricao	Descrição do lançamento	String	Requerido
+conta_id	ID da conta bancária	Integer	Requerido
+categoria_id	ID da categoria	Integer	Requerido
+valor	Use negativo para despesa e positivo para receita. Ex.: -10.00 e 10.00	Decimal	Requerido
+data_vencimento	Data de vencimento do lançamento	String	Requerido
+data_pagamento	Data do pagamento. Indica que o lançamento está pago	String	Opcional
+data_competencia	Data da competência. Data que indica a prestação do serviço ou a venda do produto.	String	Opcional
+centro_custo_lucro_id	ID do centro de custo e lucro	Integer	Opcional
+forma_pagamento_id	ID da forma de pagamento	Integer	Opcional
+pessoa_id	ID do cliente no caso de Receita e ID do fornecedor no caso de Despesa	Integer	Opcional
+tipo_documento_id	ID do tipo de documento	Integer	Opcional
+documento	Número do documento	String	Opcional
+tipo_custo_nivel_producao_id	Envia a ID de um tipo custo nivel produção	Integer	Opcional
+tipo_custo_apropriacao_produto_id	Envia a ID de um tipo custo apropriação produto	Integer	Opcional
+tags[][id]	ID da tag, pode ser passado uma lista de tags	Array[{id:Integer}]	Opcional
+periodicidade	Periodicidade da repetição:
+D7 - Semanal
+D15 - Quinzenal
+M1 - Mensal
+M2 - Bimestral
+M3 - Trimestral
+M6 - Semestral
+M12 - Anual
+String	Opcional
+total_repeticoes	Número de vezes que o lançamento será repetido
+*O valor deve ser sempre NULL se o campo infinito estiver definido como TRUE	Integer	Opcional
+infinito	Caso a repetição não tenha data para acabar, valor padrão é FALSE
+*O valor deve ser sempre FALSE se o campo total_repeticoes estiver definido	Boolean	Opcional
+observacao	Observação do lançamento	String	Opcional
+pagamento_automatico	Dar baixa automática do lançamento na data de vencimento, valor padrão é FALSE	Boolean	Opcional
+itens_adicionais[]	Itens adicionais para criar lançamento composto
+*Ver parâmetros na tabela abaixo	Array	Opcional
+Paramêtros dos itens_adicionais
+Campo	Descrição	Tipo	Obrigatoriedade
+descricao	Descrição do item	String	Requerido
+categoria_id	ID da categoria	Integer	Requerido
+valor	Use negativo para despesa e positivo para receita. Ex.: -10.00 e 10.00	Decimal	Requerido
+centro_custo_lucro_id	ID do centro de custo e lucro	Integer	Opcional
+forma_pagamento_id	ID da forma de pagamento	Integer	Opcional
+pessoa_id	ID do cliente no caso de Receita e ID do fornecedor no caso de Despesa	Integer	Opcional
+tipo_custo_nivel_producao_id	Envia a ID de um tipo custo nivel produção	Integer	Opcional
+tipo_custo_apropriacao_produto_id	Envia a ID de um tipo custo apropriação produto	Integer	Opcional
+tags[][id]	ID da tag, pode ser passado uma lista de tags	Array[{id:Integer}]	Opcional
+Exemplo de chamada
+curl -i -X POST \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  -d 'descricao=Conta de luz' \
+  -d 'valor=123.92' \
+  -d 'data_vencimento=2015-10-10' \
+  -d 'tipo_lancamento_id=1' \
+  -d 'conta_id=8' \
+  -d 'categoria_id=98' \
+  -d 'tags[][id]=12' \
+  -d 'tags[][id]=34' \
+  -d 'itens_adicionais[][descricao]=Conta de água' \
+  -d 'itens_adicionais[][valor]=321.00' \
+  -d 'itens_adicionais[][categoria_id]=50' \
+  -d 'itens_adicionais[][tags][][id]=25' \
+  'https://api.granatum.com.br/v1/lancamentos?access_token=token_cliente_granatum'
+Exemplo de resposta
+{
+  "id": 91,
+  "grupo_id": null,
+  "lancamento_transferencia_id": null,
+  "categoria_id": 98,
+  "centro_custo_lucro_id": null,
+  "tipo_custo_nivel_producao_id": null,
+  "tipo_custo_apropriacao_produto_id": null,
+  "conta_id": 8,
+  "forma_pagamento_id": null,
+  "pessoa_id": null,
+  "tipo_lancamento_id": 2,
+  "descricao": "Conta de luz",
+  "tipo_documento_id": null,
+  "documento": "",
+  "data_vencimento": "2015-10-10",
+  "valor": "123.92",
+  "data_pagamento": null,
+  "data_competencia": "2015-10-10",
+  "observacao": "",
+  "pagamento_automatico": false,
+  "numero_repeticao": 1,
+  "total_repeticoes": 1,
+  "periodicidade": null,
+  "pedido_id": null,
+  "lancamento_composto_id": 21,
+  "modified": "2016-04-29 04:53:25",
+  "anexos": [
+    {"id": 3},
+    {"id": 4}
+  ],
+  "tags": [
+    {"id": 12},
+    {"id": 34}
+  ],
+  "itens_adicionais": [
+    {"id": 92, "descricao": "Conta de água", "valor": "321.00", "categoria_id": 50, "lancamento_composto_id": 21 ...
+      "tags": [
+        {"id": 25}
+      ]
+    }
+  ]
+}
+Editar um lançamento
+Altera os dados do lançamento informado pelo ID.
+
+Método e URL
+PUT https://api.granatum.com.br/v1/lancamentos/:id
+Query String
+access_token=[token_cliente_granatum]
+Substitua inclusive os colchetes
+
+Paramêtros
+Campo	Descrição	Tipo	Obrigatoriedade
+descricao	Descrição do lançamento	String	Opcional
+conta_id	ID da conta bancária	Integer	Opcional
+categoria_id	ID da categoria	Integer	Opcional
+valor	Use negativo para despesa e positivo para receita. Ex.: -10.00 e 10.00	Decimal	Opcional
+data_vencimento	Data de vencimento do lançamento	String	Opcional
+data_pagamento	Data do pagamento. Indica que o lançamento está pago	String	Opcional
+data_competencia	Data da competência. Data que indica a prestação/contratação do serviço ou a venda/compra do produto.	String	Opcional
+centro_custo_lucro_id	ID do centro de custo e lucro	Integer	Opcional
+forma_pagamento_id	ID da forma de pagamento	Integer	Opcional
+pessoa_id	ID do cliente no caso de Receita e ID do fornecedor no caso de Despesa	Integer	Opcional
+tipo_documento_id	ID do tipo de documento	Integer	Opcional
+documento	Número do documento	String	Opcional
+tipo_custo_nivel_producao_id	Envia a ID de um tipo custo nivel produção	Integer	Opcional
+tipo_custo_apropriacao_produto_id	Envia a ID de um tipo custo apropriação produto	Integer	Opcional
+tags[][id]	ID da tag, pode ser passado uma lista de tags	Array[{id:Integer}]	Opcional
+periodicidade	Periodicidade da repetição:
+D7 - Semanal
+D15 - Quinzenal
+M1 - Mensal
+M2 - Bimestral
+M3 - Trimestral
+M6 - Semestral
+M12 - Anual
+String	Opcional
+total_repeticoes	Número de vezes que o lançamento será repetido
+*O valor deve ser sempre NULL se o campo infinito estiver definido como TRUE	Integer	Opcional
+infinito	Caso a repetição não tenha data para acabar, valor padrão é FALSE
+*O valor deve ser sempre FALSE se o campo total_repeticoes estiver definido	Boolean	Opcional
+observacao	Observação do lançamento	String	Opcional
+pagamento_automatico	Dar baixa automática do lançamento na data de vencimento, valor padrão é FALSE	Boolean	Opcional
+propagar_alteracao	Propagar as alterações para as próximas parcelas, valor padrão é FALSE	Boolean	Opcional
+itens_adicionais[]	Itens adicionais para criar lançamento composto
+*Ver parâmetros na tabela abaixo
+*Caso você esteja editando um lançamento composto, é necessário sempre passar todos os itens	Array	Opcional*
+itens_excluir[][id]	IDs dos itens a excluir	Array[{id:Integer}]	Opcional*
+*Caso você esteja editando um lançamento composto, é necessário sempre passar todos os itens considerando os campo itens_adicionais e itens_excluir
+Paramêtros dos itens_adicionais
+Campo	Descrição	Tipo	Obrigatoriedade
+id	ID do item	Integer	Requerido
+descricao	Descrição do item	String	Requerido
+categoria_id	ID da categoria	Integer	Requerido
+valor	Use negativo para despesa e positivo para receita. Ex.: -10.00 e 10.00	Decimal	Requerido
+centro_custo_lucro_id	ID do centro de custo e lucro	Integer	Opcional
+forma_pagamento_id	ID da forma de pagamento	Integer	Opcional
+pessoa_id	ID do cliente no caso de Receita e ID do fornecedor no caso de Despesa	Integer	Opcional
+tipo_custo_nivel_producao_id	Envia a ID de um tipo custo nivel produção	Integer	Opcional
+tipo_custo_apropriacao_produto_id	Envia a ID de um tipo custo apropriação produto	Integer	Opcional
+tags[][id]	ID da tag, pode ser passado uma lista de tags	Array[{id:Integer}]	Opcional
+Exemplo de chamada
+curl -i -X PUT \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  -d 'data_vencimento=2015-10-18' \
+  -d 'itens_adicionais[][id]=92' \
+  -d 'itens_adicionais[][descricao]=Tarifa extra' \
+  'https://api.granatum.com.br/v1/lancamentos/91?access_token=token_cliente_granatum'
+Exemplo de resposta
+{
+  "id": 91,
+  "grupo_id": null,
+  "lancamento_transferencia_id": null,
+  "categoria_id": 98,
+  "centro_custo_lucro_id": null,
+  "tipo_custo_nivel_producao_id": null,
+  "tipo_custo_apropriacao_produto_id": null,
+  "conta_id": 8,
+  "forma_pagamento_id": null,
+  "pessoa_id": null,
+  "tipo_lancamento_id": 2,
+  "descricao": "Conta de luz",
+  "tipo_documento_id": null,
+  "documento": "",
+  "data_vencimento": "2015-10-18",
+  "valor": "123.92",
+  "data_pagamento": null,
+  "data_competencia": "2015-10-10",
+  "observacao": "",
+  "pagamento_automatico": false,
+  "numero_repeticao": 1,
+  "total_repeticoes": 1,
+  "periodicidade": null,
+  "pedido_id": null,
+  "lancamento_composto_id": 21,
+  "modified": "2016-04-29 04:53:25",
+  "anexos": [],
+  "tags": [],
+  "itens_adicionais": [
+    {"id": 92, "descricao": "Tarifa extra", "valor": "321.00", "categoria_id": 50, "lancamento_composto_id": 21 ...}
+  ]
+}
+Listar lançamentos
+Lista todos lançamentos
+
+Método e URL
+GET https://api.granatum.com.br/v1/lancamentos
+Substitua inclusive os colchetes
+
+Query String
+access_token=[token_cliente_granatum]
+Substitua inclusive os colchetes
+
+Paramêtros
+Campo	Descrição	Tipo	Obrigatoriedade
+conta_id	ID da Conta Bancária	Integer	Requerido
+pessoa_id	ID do cliente no caso de Receita e ID do fornecedor no caso de Despesa
+*Caso o campo pessoa_id seja informado, não é necessário passar a conta_id	Integer	Opcional
+grupo_id	ID de agrupamento da repetição dos Lançamentos	Integer	Opcional
+lancamento_composto_id	ID de agrupamento dos itens de um lançamento	Integer	Opcional
+categoria_id	ID da categoria	Integer	Opcional
+centro_custo_lucro_id	ID do centro de custo e lucro	Integer	Opcional
+forma_pagamento_id	ID da Forma de Pagamento	Integer	Opcional
+tipo_documento_id	ID do tipo de documento	Integer	Opcional
+documento	Busca exata no campo documento	String	Opcional
+tag_id	ID da tag. Para filtrar as tags, é possível utilizar operadores lógicos na consulta:
+Para operador "OU": informar os ids de tags separados por "|", ficando "1|2|3"
+Para operador "E": informar os ids de tags separados por "&", ficando "1&2&3"
+String	Opcional
+data_inicio	Data de início para filtro da data conforme o regime	String	Opcional
+data_fim	Data de fim para filtro da data conforme o regime
+*Sempre informar as duas datas para o filtro funcionar	String	Opcional
+modificado_apos	Busca lançamentos criados e/ou modificados após a data informada
+*Aceita no formato AAAA-MM-DD ou AAAA-MM-DD HH:MM:SS	String	Opcional
+regime	Define qual data considerar nos filtros de data_inicio e data_fim, o valor padrão é caixa:
+caixa: Considerara a data de vencimento para lançamentos em aberto ou data de pagamento para lançamentos consolidados
+competencia: Considera a data de competência
+String	Opcional
+busca	Realiza busca aproximada no valor, descrição, observação e nome de cliente/fornecedor	String	Opcional
+tipo	Filtra o tipo de lançamento:
+P: Lancamentos a pagar
+R: Lançamentos a receber
+LP: Lancamentos pagos
+LR: Lançamentos recebidos
+PA: Lancamentos a pagar atrasados
+RA: Lançamentos a receber atrasados
+DT: Desconsiderar transferências
+String	Opcional
+tipo_view	Formato do retorno dos dados:
+list: lista simples com o ID e descrição de cada lançamento
+count: número de lançamentos encontrados com base nos filtros
+detail: lista completa dos lancamentos as informação relacionadas (conta, categoria, cliente, fornecedor, etc.) detalhadas, ideal para integração com BI
+Se não enviar esse parâmetro, a lista de lançamentos será completa com todos os dados
+String	Opcional
+limit	Indica o número de registros por página. o padrão é 50 registros e limite máximo é 500.	Integer	Opcional
+start	Indica o offset da paginação.
+Ex.: Para pegar o registros de 151 à 200 use: start=150&limit=50	Integer	Opcional
+Exemplo de chamada
+curl -i -X GET \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  'https://api.granatum.com.br/v1/lancamentos?access_token=token_cliente_granatum&conta_id=[conta_bancaria_id]'
+Exemplo de resposta
+[{
+  "id": 91,
+  "grupo_id": null,
+  "lancamento_transferencia_id": null,
+  "categoria_id": 98,
+  "centro_custo_lucro_id": null,
+  "tipo_custo_nivel_producao_id": null,
+  "tipo_custo_apropriacao_produto_id": null,
+  "conta_id": 8,
+  "forma_pagamento_id": null,
+  "pessoa_id": null,
+  "descricao": "Conta de luz",
+  "tipo_documento_id": null,
+  "documento": "",
+  "data_vencimento": "2015-10-10",
+  "valor": "-123.92",
+  "data_pagamento": null,
+  "data_competencia": "2015-10-10",
+  "observacao": "",
+  "pagamento_automatico": false,
+  "numero_repeticao": 1,
+  "total_repeticoes": 1,
+  "periodicidade": null,
+  "pedido_id": null,
+  "lancamento_composto_id": null,
+  "modified": "2016-04-29 04:53:25",
+  "anexos": [
+    {"id": 3},
+    {"id": 4}
+  ],
+  "tags": [
+    {"id": 12},
+    {"id": 34}
+  ],
+  "itens_adicionais": [
+    {"id": 92, "descricao": "Tarifa extra", "valor": "321.00", "categoria_id": 50, "lancamento_composto_id": 21 ...}
+  ]
+}]
+Consultar um lançamento
+Retorna os dados do lançamento informado pelo ID.
+
+Método e URL
+GET https://api.granatum.com.br/v1/lancamentos/:id
+Substitua inclusive os colchetes
+
+Query String
+access_token=[token_cliente_granatum]
+Exemplo de chamada
+curl -i -X GET \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  'https://api.granatum.com.br/v1/lancamentos/91?access_token=token_cliente_granatum'
+Exemplo de resposta
+{
+  "id": 91,
+  "grupo_id": null,
+  "lancamento_transferencia_id": null,
+  "categoria_id": 98,
+  "centro_custo_lucro_id": null,
+  "tipo_custo_nivel_producao_id": null,
+  "tipo_custo_apropriacao_produto_id": null,
+  "conta_id": 8,
+  "forma_pagamento_id": null,
+  "pessoa_id": null,
+  "descricao": "Conta de luz",
+  "tipo_documento_id": null,
+  "documento": "",
+  "data_vencimento": "2015-10-18",
+  "valor": "-123.92",
+  "data_pagamento": null,
+  "data_competencia": "2015-10-10",
+  "observacao": "",
+  "pagamento_automatico": false,
+  "numero_repeticao": 1,
+  "total_repeticoes": 1,
+  "periodicidade": null,
+  "pedido_id": null,
+  "lancamento_composto_id": null,
+  "modified": "2016-04-29 04:53:25",
+  "anexos": [
+    {"id": 3},
+    {"id": 4}
+  ],
+  "tags": [
+    {"id": 12},
+    {"id": 34}
+  ],
+  "itens_adicionais": [
+    {"id": 92, "descricao": "Tarifa extra", "valor": "321.00", "categoria_id": 50, "lancamento_composto_id": 21 ...}
+  ]
+}
+Excluir um lançamento
+Remove do sistema o lançamento informado pelo ID.
+
+Método e URL
+DELETE https://api.granatum.com.br/v1/lancamentos/:id
+Substitua inclusive os colchetes
+
+Query String
+access_token=[token_cliente_granatum]
+Exemplo de chamada
+curl -i -X DELETE \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  'https://api.granatum.com.br/v1/lancamentos/91?access_token=token_cliente_granatum'
+Exemplo de resposta
+true
+
+
+Cobranças - Granatum Pagamentos
+Criar uma cobrança
+Cria uma cobrança que pode ser via boleto, cartão de crédito ou pix, com envio por e-mail.
+
+Método e URL
+POST https://api.granatum.com.br/v1/cobrancas
+Query String
+access_token=[token_cliente_granatum]
+Substitua inclusive os colchetes
+
+Paramêtros
+Campo	Descrição	Tipo	Obrigatoriedade
+conta_id	ID da conta bancária	Integer	Requerido
+cliente_id	ID do cliente	Integer	Requerido
+data_vencimento	Data de vencimento da cobrança	String	Requerido
+tipo_cobranca	Escolha a foma de pagamento ('boleto', 'cartao_credito' ou 'pix')	String	Requerido
+itens[]	Itens da cobrança
+*Ver parâmetros na tabela abaixo	Array	Requerido
+data_competencia	Data de competência do lançamento	String	Opcional
+email	Email do cliente caso deseje enviar a cobrança por e-mail automaticamente	String	Opcional
+percentual_multa	O percentual de multa padrão é %2 para boletos atrasados	Integer	Opcional
+cobrar_juros	O padrão é cobrar juros de 1% para boletos atrasados	Boolean	Opcional
+instrucoes_boleto	Especificar um texto que será inserido nas instruções do boleto	String	Opcional
+permitir_segunda_via	O padrão é permitir a emissão da 2ª via do boleto	Boolean	Opcional
+dias_para_emissao	O número de dias antes do vencimento que a cobrança deve ser emitida, se não informado será usada a configuração padrão de 5 dias	Integer	Opcional
+tipo_emissao	1 - Emitir a cobrança agora independente da data de vencimento e dos dias para emissão
+2 - Agendar ou emitir a cobrança de acordo com a data de vencimento e os dias para emissão
+*Caso não seja informado, será usado o tipo 2	Integer	Opcional
+periodicidade	Use uma das opções caso queira gerar uma cobrança com repetição:
+D7 - Semanal
+D15 - Quinzenal
+M1 - Mensal
+M2 - Bimestral
+M3 - Trimestral
+M6 - Semestral
+M12 - Anual
+String	Opcional
+parcelas	Informe o número de parcelas que deseja gerar. Caso não seja informado, a repetição será para sempre.	Integer	Opcional
+Paramêtros dos itens
+Campo	Descrição	Tipo	Obrigatoriedade
+descricao	Descrição do item	String	Requerido
+categoria_id	ID da categoria	Integer	Requerido
+valor	Somente é permitido valores positivos	Decimal	Requerido
+centro_custo_lucro_id	ID do centro de custo e lucro	Integer	Opcional
+Exemplo de chamada
+curl -i -X POST \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  -d 'conta_id=8' \
+  -d 'cliente_id=10' \
+  -d 'data_vencimento=2016-08-12' \
+  -d 'tipo_cobranca=boleto' \
+  -d 'itens[][descricao]=Criação de site' \
+  -d 'itens[][valor]=123.92' \
+  -d 'itens[][categoria_id]=98' \
+  'https://api.granatum.com.br/v1/cobrancas?access_token=token_cliente_granatum'
+Exemplo de resposta
+{
+  "id":1245,
+  "valor":"123.92",
+  "valor_taxa":"-4.9",
+  "percentual_multa":"2.0",
+  "cobrar_juros":1,
+  "valor_multa_juros":"0.0",
+  "valor_pago":null,
+  "instrucoes_boleto":null,
+  "permitir_segunda_via":1,
+  "lancamento_ids":"7835741,7835742",
+  "forma_pagamento_id":123096,
+  "cliente_id":10,
+  "conta_id":8,
+  "email":null,
+  "data_vencimento":"2016-08-12",
+  "data_a_transferir":null,
+  "data_transferindo":null,
+  "data_transferido":null,
+  "data_cancelamento":null,
+  "status_id":1,
+  "status_descricao":"Pendente",
+  "cobranca_hash":"A0SD0S0DSA00DAS0DS0AD0SA"
+  "link_publico":"https://secure.granatum.com.br/pagar/A0SD0S0DSA00DAS0DS0AD0SA"
+}
+Listar cobranças
+Lista todas cobranças
+
+Método e URL
+GET https://api.granatum.com.br/v1/cobrancas
+Substitua inclusive os colchetes
+
+Query String
+access_token=[token_cliente_granatum]
+Substitua inclusive os colchetes
+
+Paramêtros
+Campo	Descrição	Tipo	Obrigatoriedade
+conta_id	ID da conta bancária	String	Opcional*
+cliente_id	ID do cliente	String	Opcional*
+cobranca_hash	Hash de identificação da cobrança	String	Opcional*
+lancamento_composto_id	ID do lançamento composto para buscar a cobrança	String	Opcional*
+data_inicio	Data de vencimento maior ou igual a data_inicio	String	Opcional*
+data_fim	Data de vencimento menor ou igual a data_fim	String	Opcional*
+start	Indica o offset da paginação. 50 registros por listagem.	String	Opcional
+tipo_view	Opções: all ou count	String	Opcional
+status	Opções: agendado, pendente, cliente_pagou, transferindo ou transferido	String	Opcional
+*Informe pelo menos 1 dos campos opcionais
+
+access_token=[token_cliente_granatum]&data_inicio=[data_inicio]
+Exemplo de chamada
+curl -i -X GET \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  'https://api.granatum.com.br/v1/cobrancas?access_token=token_cliente_granatum&data_inicio=2015-01-01'
+Exemplo de resposta
+[{
+  "id":1245,
+  "valor":"123.92",
+  "valor_taxa":"-4.9",
+  "percentual_multa":"2.0",
+  "cobrar_juros":1,
+  "valor_multa_juros":"0.0",
+  "valor_pago":null,
+  "instrucoes_boleto":null,
+  "permitir_segunda_via":1,
+  "lancamento_ids":"7835741,7835742",
+  "forma_pagamento_id":123096,
+  "cliente_id":10,
+  "conta_id":8,
+  "email":null,
+  "data_vencimento":"2016-08-12",
+  "data_a_transferir":null,
+  "data_transferindo":null,
+  "data_transferido":null,
+  "data_cancelamento":null,
+  "status_id":1,
+  "status_descricao":"Pendente",
+  "cobranca_hash":"A0SD0S0DSA00DAS0DS0AD0SA"
+  "link_publico":"https://secure.granatum.com.br/pagar/A0SD0S0DSA00DAS0DS0AD0SA"
+}]
+Consultar uma cobrança
+Retorna os dados da cobrança informada pelo ID.
+
+Método e URL
+GET https://api.granatum.com.br/v1/cobrancas/:id
+Substitua inclusive os colchetes
+
+Query String
+access_token=[token_cliente_granatum]
+Exemplo de chamada
+curl -i -X GET \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  'https://api.granatum.com.br/v1/cobrancas/1245?access_token=token_cliente_granatum'
+Exemplo de resposta
+{
+  "id":1245,
+  "valor":"123.92",
+  "valor_taxa":"-4.9",
+  "percentual_multa":"2.0",
+  "cobrar_juros":1,
+  "valor_multa_juros":"0.0",
+  "valor_pago":null,
+  "instrucoes_boleto":null,
+  "permitir_segunda_via":1,
+  "lancamento_ids":"7835741,7835742",
+  "forma_pagamento_id":123096,
+  "cliente_id":10,
+  "conta_id":8,
+  "email":null,
+  "data_vencimento":"2016-08-12",
+  "data_a_transferir":null,
+  "data_transferindo":null,
+  "data_transferido":null,
+  "data_cancelamento":null,
+  "status_id":1,
+  "status_descricao":"Pendente",
+  "cobranca_hash":"A0SD0S0DSA00DAS0DS0AD0SA"
+  "link_publico":"https://secure.granatum.com.br/pagar/A0SD0S0DSA00DAS0DS0AD0SA"
+}
+Cancelar uma cobrança
+Cancalar uma cobrança informada pelo ID.
+
+Método e URL
+DELETE https://api.granatum.com.br/v1/cobrancas/:id
+Query String
+access_token=[token_cliente_granatum]
+Substitua inclusive os colchetes
+
+Paramêtros
+Campo	Descrição	Tipo	Obrigatoriedade
+excluir_lancamentos	Excluir os lançamentos associados a cobrança, valor padrão é FALSE	Boolean	Opcional
+enviar_email_aviso	Enviar aviso ao cliente que a cobrança foi cancelada, valor padrão é FALSE	Boolean	Opcional
+Exemplo de chamada
+$ curl -i -X DELETE \
+  -H "Content-Type:application/x-www-form-urlencoded" \
+  'https://api.granatum.com.br/v1/cobrancas/143?access_token=token_cliente_granatum'
+Exemplo de resposta
+{
+  "success": "Cobrança cancelada com sucesso."
+}

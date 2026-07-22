@@ -1,0 +1,814 @@
+{
+    "data_execucao": "2026-04-01 17:53:13",
+    "operacao": "REMOVER_LANCAMENTO",
+    "filtro": {
+        "descricao_contem": "Taxa de Preparo - Núcleo Estrela Divina (R$48,00 por pessoa em 3x de R$16,00 - Mar, Abr, Maio)"
+    },
+    "periodo": {
+        "data_inicio": "2026-04-01",
+        "data_fim": "2026-04-30"
+    },
+    "cobrancas_encontradas": 87,
+    "lancamentos_encontrados": 1261,
+    "lancamentos_removidos": 84,
+    "processadas": 87,
+    "sucesso": 87,
+    "falhas": 0,
+    "erros_busca_lancamento": [
+        {
+            "lancamento_id": 149469250,
+            "cobranca_id": 3130156,
+            "cliente_id": 3146730
+        },
+        {
+            "lancamento_id": 149469262,
+            "cobranca_id": 3130156,
+            "cliente_id": 3146730
+        }
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3666612,
+            "cobranca_id_novo": 3666924,
+            "cliente_id": 3146752,
+            "cliente_nome": "3146752",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "400.21"
+        },
+        {
+            "cobranca_id_original": 3666613,
+            "cobranca_id_novo": 3666925,
+            "cliente_id": 3146754,
+            "cliente_nome": "3146754",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "280.21"
+        },
+        {
+            "cobranca_id_original": 3666614,
+            "cobranca_id_novo": 3666926,
+            "cliente_id": 3146755,
+            "cliente_nome": "3146755",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "341.21"
+        },
+        {
+            "cobranca_id_original": 3666615,
+            "cobranca_id_novo": 3666927,
+            "cliente_id": 3146756,
+            "cliente_nome": "3146756",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "535.53"
+        },
+        {
+            "cobranca_id_original": 3666616,
+            "cobranca_id_novo": 3666928,
+            "cliente_id": 3146758,
+            "cliente_nome": "3146758",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "361.21"
+        },
+        {
+            "cobranca_id_original": 3553688,
+            "cobranca_id_novo": 3666929,
+            "cliente_id": 3805703,
+            "cliente_nome": "3805703",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "254.21"
+        },
+        {
+            "cobranca_id_original": 3666617,
+            "cobranca_id_novo": 3666930,
+            "cliente_id": 3146759,
+            "cliente_nome": "3146759",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "431.21"
+        },
+        {
+            "cobranca_id_original": 3666618,
+            "cobranca_id_novo": 3666932,
+            "cliente_id": 3146761,
+            "cliente_nome": "3146761",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3666619,
+            "cobranca_id_novo": 3666933,
+            "cliente_id": 3146762,
+            "cliente_nome": "3146762",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "264.21"
+        },
+        {
+            "cobranca_id_original": 3666620,
+            "cobranca_id_novo": 3666934,
+            "cliente_id": 3146763,
+            "cliente_nome": "3146763",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3666621,
+            "cobranca_id_novo": 3666935,
+            "cliente_id": 3146765,
+            "cliente_nome": "3146765",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "387.21"
+        },
+        {
+            "cobranca_id_original": 3666622,
+            "cobranca_id_novo": 3666936,
+            "cliente_id": 3146766,
+            "cliente_nome": "3146766",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "831.21"
+        },
+        {
+            "cobranca_id_original": 3666623,
+            "cobranca_id_novo": 3666937,
+            "cliente_id": 3146767,
+            "cliente_nome": "3146767",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "383.21"
+        },
+        {
+            "cobranca_id_original": 3553614,
+            "cobranca_id_novo": 3666938,
+            "cliente_id": 3805712,
+            "cliente_nome": "3805712",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "254.21"
+        },
+        {
+            "cobranca_id_original": 3666624,
+            "cobranca_id_novo": 3666939,
+            "cliente_id": 3679765,
+            "cliente_nome": "3679765",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "114.21"
+        },
+        {
+            "cobranca_id_original": 3666625,
+            "cobranca_id_novo": 3666940,
+            "cliente_id": 3371065,
+            "cliente_nome": "3371065",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666626,
+            "cobranca_id_novo": 3666941,
+            "cliente_id": 3542615,
+            "cliente_nome": "3542615",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "862.21"
+        },
+        {
+            "cobranca_id_original": 3666628,
+            "cobranca_id_novo": 3666942,
+            "cliente_id": 3542643,
+            "cliente_nome": "3542643",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "85.08"
+        },
+        {
+            "cobranca_id_original": 3666629,
+            "cobranca_id_novo": 3666943,
+            "cliente_id": 3542647,
+            "cliente_nome": "3542647",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666630,
+            "cobranca_id_novo": 3666944,
+            "cliente_id": 3720323,
+            "cliente_nome": "3720323",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666631,
+            "cobranca_id_novo": 3666945,
+            "cliente_id": 3312976,
+            "cliente_nome": "3312976",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666632,
+            "cobranca_id_novo": 3666946,
+            "cliente_id": 3295104,
+            "cliente_nome": "3295104",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "144.78"
+        },
+        {
+            "cobranca_id_original": 3666633,
+            "cobranca_id_novo": 3666947,
+            "cliente_id": 3210136,
+            "cliente_nome": "3210136",
+            "status": "OK",
+            "itens_count": 9,
+            "valor_novo": "424.53"
+        },
+        {
+            "cobranca_id_original": 3666634,
+            "cobranca_id_novo": 3666948,
+            "cliente_id": 3146650,
+            "cliente_nome": "3146650",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "841.53"
+        },
+        {
+            "cobranca_id_original": 3666635,
+            "cobranca_id_novo": 3666949,
+            "cliente_id": 3146651,
+            "cliente_nome": "3146651",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "610.53"
+        },
+        {
+            "cobranca_id_original": 3666636,
+            "cobranca_id_novo": 3666950,
+            "cliente_id": 3146653,
+            "cliente_nome": "3146653",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "644.53"
+        },
+        {
+            "cobranca_id_original": 3666638,
+            "cobranca_id_novo": 3666951,
+            "cliente_id": 3146654,
+            "cliente_nome": "3146654",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3666639,
+            "cobranca_id_novo": 3666952,
+            "cliente_id": 3146655,
+            "cliente_nome": "3146655",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "680.53"
+        },
+        {
+            "cobranca_id_original": 3666640,
+            "cobranca_id_novo": 3666953,
+            "cliente_id": 3146656,
+            "cliente_nome": "3146656",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "931.53"
+        },
+        {
+            "cobranca_id_original": 3666641,
+            "cobranca_id_novo": 3666954,
+            "cliente_id": 3146658,
+            "cliente_nome": "3146658",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "315.21"
+        },
+        {
+            "cobranca_id_original": 3666642,
+            "cobranca_id_novo": 3666955,
+            "cliente_id": 3146662,
+            "cliente_nome": "3146662",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "431.53"
+        },
+        {
+            "cobranca_id_original": 3666644,
+            "cobranca_id_novo": 3666956,
+            "cliente_id": 3146664,
+            "cliente_nome": "3146664",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "447.08"
+        },
+        {
+            "cobranca_id_original": 3666645,
+            "cobranca_id_novo": 3666957,
+            "cliente_id": 3146665,
+            "cliente_nome": "3146665",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "571.53"
+        },
+        {
+            "cobranca_id_original": 3666646,
+            "cobranca_id_novo": 3666958,
+            "cliente_id": 3146666,
+            "cliente_nome": "3146666",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "269.21"
+        },
+        {
+            "cobranca_id_original": 3666647,
+            "cobranca_id_novo": 3666959,
+            "cliente_id": 3146668,
+            "cliente_nome": "3146668",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "564.21"
+        },
+        {
+            "cobranca_id_original": 3666649,
+            "cobranca_id_novo": 3666960,
+            "cliente_id": 3146669,
+            "cliente_nome": "3146669",
+            "status": "OK",
+            "itens_count": 18,
+            "valor_novo": "718.53"
+        },
+        {
+            "cobranca_id_original": 3666650,
+            "cobranca_id_novo": 3666961,
+            "cliente_id": 3146670,
+            "cliente_nome": "3146670",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "623.27"
+        },
+        {
+            "cobranca_id_original": 3666651,
+            "cobranca_id_novo": 3666962,
+            "cliente_id": 3146671,
+            "cliente_nome": "3146671",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "320.21"
+        },
+        {
+            "cobranca_id_original": 3666652,
+            "cobranca_id_novo": 3666964,
+            "cliente_id": 3146672,
+            "cliente_nome": "3146672",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "1590.53"
+        },
+        {
+            "cobranca_id_original": 3666653,
+            "cobranca_id_novo": 3666970,
+            "cliente_id": 3146675,
+            "cliente_nome": "3146675",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "216.53"
+        },
+        {
+            "cobranca_id_original": 3666654,
+            "cobranca_id_novo": 3666971,
+            "cliente_id": 3146678,
+            "cliente_nome": "3146678",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "703.53"
+        },
+        {
+            "cobranca_id_original": 3666655,
+            "cobranca_id_novo": 3666972,
+            "cliente_id": 3146680,
+            "cliente_nome": "3146680",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "629.21"
+        },
+        {
+            "cobranca_id_original": 3666656,
+            "cobranca_id_novo": 3666973,
+            "cliente_id": 3146683,
+            "cliente_nome": "3146683",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666657,
+            "cobranca_id_novo": 3666974,
+            "cliente_id": 3146684,
+            "cliente_nome": "3146684",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666658,
+            "cobranca_id_novo": 3666975,
+            "cliente_id": 3146685,
+            "cliente_nome": "3146685",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "261.21"
+        },
+        {
+            "cobranca_id_original": 3666659,
+            "cobranca_id_novo": 3666976,
+            "cliente_id": 3146688,
+            "cliente_nome": "3146688",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "579.53"
+        },
+        {
+            "cobranca_id_original": 3666660,
+            "cobranca_id_novo": 3666977,
+            "cliente_id": 3146689,
+            "cliente_nome": "3146689",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "669.53"
+        },
+        {
+            "cobranca_id_original": 3666662,
+            "cobranca_id_novo": 3666978,
+            "cliente_id": 3751875,
+            "cliente_nome": "3751875",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "207.00"
+        },
+        {
+            "cobranca_id_original": 3666661,
+            "cobranca_id_novo": 3666979,
+            "cliente_id": 3146692,
+            "cliente_nome": "3146692",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "229.21"
+        },
+        {
+            "cobranca_id_original": 3666663,
+            "cobranca_id_novo": 3666980,
+            "cliente_id": 3146694,
+            "cliente_nome": "3146694",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "219.21"
+        },
+        {
+            "cobranca_id_original": 3666664,
+            "cobranca_id_novo": 3666981,
+            "cliente_id": 3146695,
+            "cliente_nome": "3146695",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3666665,
+            "cobranca_id_novo": 3666982,
+            "cliente_id": 3146696,
+            "cliente_nome": "3146696",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "526.21"
+        },
+        {
+            "cobranca_id_original": 3666669,
+            "cobranca_id_novo": 3666984,
+            "cliente_id": 3751880,
+            "cliente_nome": "3751880",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "95.21"
+        },
+        {
+            "cobranca_id_original": 3666670,
+            "cobranca_id_novo": 3666990,
+            "cliente_id": 3146697,
+            "cliente_nome": "3146697",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "293.21"
+        },
+        {
+            "cobranca_id_original": 3666671,
+            "cobranca_id_novo": 3666991,
+            "cliente_id": 3146699,
+            "cliente_nome": "3146699",
+            "status": "OK",
+            "itens_count": 8,
+            "valor_novo": "71.21"
+        },
+        {
+            "cobranca_id_original": 3666672,
+            "cobranca_id_novo": 3666992,
+            "cliente_id": 3146698,
+            "cliente_nome": "3146698",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "394.21"
+        },
+        {
+            "cobranca_id_original": 3136195,
+            "cobranca_id_novo": 3666993,
+            "cliente_id": 3146702,
+            "cliente_nome": "3146702",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "266.21"
+        },
+        {
+            "cobranca_id_original": 3666673,
+            "cobranca_id_novo": 3666994,
+            "cliente_id": 3146703,
+            "cliente_nome": "3146703",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "289.21"
+        },
+        {
+            "cobranca_id_original": 3666674,
+            "cobranca_id_novo": 3666995,
+            "cliente_id": 3146706,
+            "cliente_nome": "3146706",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "597.53"
+        },
+        {
+            "cobranca_id_original": 3666675,
+            "cobranca_id_novo": 3666996,
+            "cliente_id": 3146708,
+            "cliente_nome": "3146708",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "334.53"
+        },
+        {
+            "cobranca_id_original": 3666676,
+            "cobranca_id_novo": 3666997,
+            "cliente_id": 3146709,
+            "cliente_nome": "3146709",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "288.21"
+        },
+        {
+            "cobranca_id_original": 3666677,
+            "cobranca_id_novo": 3666998,
+            "cliente_id": 3146710,
+            "cliente_nome": "3146710",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "556.53"
+        },
+        {
+            "cobranca_id_original": 3666678,
+            "cobranca_id_novo": 3666999,
+            "cliente_id": 3146713,
+            "cliente_nome": "3146713",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "306.21"
+        },
+        {
+            "cobranca_id_original": 3666679,
+            "cobranca_id_novo": 3667000,
+            "cliente_id": 3146715,
+            "cliente_nome": "3146715",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "567.53"
+        },
+        {
+            "cobranca_id_original": 3666680,
+            "cobranca_id_novo": 3667001,
+            "cliente_id": 3146716,
+            "cliente_nome": "3146716",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "209.21"
+        },
+        {
+            "cobranca_id_original": 3666681,
+            "cobranca_id_novo": 3667002,
+            "cliente_id": 3146717,
+            "cliente_nome": "3146717",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "213.36"
+        },
+        {
+            "cobranca_id_original": 3666682,
+            "cobranca_id_novo": 3667003,
+            "cliente_id": 3146719,
+            "cliente_nome": "3146719",
+            "status": "OK",
+            "itens_count": 9,
+            "valor_novo": "150.09"
+        },
+        {
+            "cobranca_id_original": 3666683,
+            "cobranca_id_novo": 3667004,
+            "cliente_id": 3146720,
+            "cliente_nome": "3146720",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "506.53"
+        },
+        {
+            "cobranca_id_original": 3666684,
+            "cobranca_id_novo": 3667005,
+            "cliente_id": 3146721,
+            "cliente_nome": "3146721",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "362.21"
+        },
+        {
+            "cobranca_id_original": 3666685,
+            "cobranca_id_novo": 3667006,
+            "cliente_id": 3146722,
+            "cliente_nome": "3146722",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "294.32"
+        },
+        {
+            "cobranca_id_original": 3666686,
+            "cobranca_id_novo": 3667007,
+            "cliente_id": 3146726,
+            "cliente_nome": "3146726",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "610.53"
+        },
+        {
+            "cobranca_id_original": 3666687,
+            "cobranca_id_novo": 3667008,
+            "cliente_id": 3146729,
+            "cliente_nome": "3146729",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "690.53"
+        },
+        {
+            "cobranca_id_original": 3130156,
+            "cobranca_id_novo": 3667009,
+            "cliente_id": 3146730,
+            "cliente_nome": "3146730",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "349.53"
+        },
+        {
+            "cobranca_id_original": 3565548,
+            "cobranca_id_novo": 3667010,
+            "cliente_id": 3146731,
+            "cliente_nome": "3146731",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "266.21"
+        },
+        {
+            "cobranca_id_original": 3666688,
+            "cobranca_id_novo": 3667011,
+            "cliente_id": 3146731,
+            "cliente_nome": "3146731",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "286.21"
+        },
+        {
+            "cobranca_id_original": 3666689,
+            "cobranca_id_novo": 3667012,
+            "cliente_id": 3146733,
+            "cliente_nome": "3146733",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "194.00"
+        },
+        {
+            "cobranca_id_original": 3666690,
+            "cobranca_id_novo": 3667013,
+            "cliente_id": 3146735,
+            "cliente_nome": "3146735",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "224.21"
+        },
+        {
+            "cobranca_id_original": 3666691,
+            "cobranca_id_novo": 3667014,
+            "cliente_id": 3146737,
+            "cliente_nome": "3146737",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "591.53"
+        },
+        {
+            "cobranca_id_original": 3666692,
+            "cobranca_id_novo": 3667015,
+            "cliente_id": 3146738,
+            "cliente_nome": "3146738",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "225.21"
+        },
+        {
+            "cobranca_id_original": 3189289,
+            "cobranca_id_novo": 3667016,
+            "cliente_id": 3146740,
+            "cliente_nome": "3146740",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "251.21"
+        },
+        {
+            "cobranca_id_original": 3666693,
+            "cobranca_id_novo": 3667017,
+            "cliente_id": 3273204,
+            "cliente_nome": "3273204",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "239.21"
+        },
+        {
+            "cobranca_id_original": 3666694,
+            "cobranca_id_novo": 3667018,
+            "cliente_id": 3146743,
+            "cliente_nome": "3146743",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "708.53"
+        },
+        {
+            "cobranca_id_original": 3666695,
+            "cobranca_id_novo": 3667019,
+            "cliente_id": 3146744,
+            "cliente_nome": "3146744",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "165.21"
+        },
+        {
+            "cobranca_id_original": 3666697,
+            "cobranca_id_novo": 3667020,
+            "cliente_id": 3146745,
+            "cliente_nome": "3146745",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "656.53"
+        },
+        {
+            "cobranca_id_original": 3666698,
+            "cobranca_id_novo": 3667021,
+            "cliente_id": 3146746,
+            "cliente_nome": "3146746",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "319.21"
+        },
+        {
+            "cobranca_id_original": 3666699,
+            "cobranca_id_novo": 3667022,
+            "cliente_id": 3146747,
+            "cliente_nome": "3146747",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "170.93"
+        },
+        {
+            "cobranca_id_original": 3666700,
+            "cobranca_id_novo": 3667023,
+            "cliente_id": 3146751,
+            "cliente_nome": "3146751",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "463.53"
+        }
+    ]
+}

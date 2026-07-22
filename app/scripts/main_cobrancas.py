@@ -385,6 +385,7 @@ def menu_principal():
     print("  6 - LISTAR lancamentos por lista de clientes")
     print("-" * 50)
     print("  7 - ANÁLISE DE DADOS E RELATÓRIOS")
+    print("  8 - ATUALIZAR lista de clientes ativos (via API)")
     print("-" * 50)
     print("  0 - Sair")
     print()
@@ -774,6 +775,54 @@ def executar_listar_lancamentos_por_clientes(gestor):
     print(f"{'=' * 95}")
 
 
+def executar_atualizar_clientes(gestor):
+    """Busca clientes ativos na API do Granatum e atualiza a lista local todos_clientes.json."""
+    print("\n--- ATUALIZAR LISTA DE CLIENTES ATIVOS (API) ---")
+    
+    confirm = input("Confirmar atualização dos clientes ativos via API? (s/N): ").strip().lower()
+    if confirm != "s":
+        print("Operação cancelada.")
+        return
+        
+    print("📡 Buscando dados de clientes no Granatum...")
+    clientes_api = gestor.client.get("clientes")
+    
+    if not clientes_api:
+        print("❌ Falha ao buscar clientes da API ou lista vazia.")
+        return
+        
+    # Filtra apenas os clientes ativos
+    ativos = [
+        {"nome": c["nome"], "id": c["id"]}
+        for c in clientes_api
+        if c.get("ativo") is True
+    ]
+    
+    # Ordenar por nome
+    ativos.sort(key=lambda x: x["nome"].lower())
+    
+    # Caminho do arquivo de saída
+    pasta = getattr(config, "CLIENTES_DIR", "data/clientes")
+    caminho = os.path.join(pasta, "todos_clientes.json")
+    
+    try:
+        # Fazer backup do anterior por segurança
+        if os.path.exists(caminho):
+            import shutil
+            caminho_backup = caminho + ".bak"
+            shutil.copy2(caminho, caminho_backup)
+            print(f"📦 Backup do arquivo anterior criado em: todos_clientes.json.bak")
+            
+        with open(caminho, "w", encoding="utf-8") as f:
+            json.dump(ativos, f, indent=2, ensure_ascii=False)
+            
+        print(f"✅ Sucesso! Lista de clientes ativos atualizada com {len(ativos)} clientes.")
+        print(f"📂 Arquivo atualizado: {caminho}")
+        
+    except Exception as e:
+        print(f"❌ Erro ao salvar o arquivo: {e}")
+
+
 def executar_analise_dados():
     """Menu e fluxo para a análise de dados e relatórios."""
     print("\n--- ANÁLISE DE DADOS E RELATÓRIOS ---")
@@ -914,6 +963,8 @@ if __name__ == "__main__":
             executar_listar_lancamentos_por_clientes(gestor)
         elif opcao == "7":
             executar_analise_dados()
+        elif opcao == "8":
+            executar_atualizar_clientes(gestor)
         elif opcao == "0":
             print("Encerrado.")
             break

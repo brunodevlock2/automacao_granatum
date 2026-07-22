@@ -52,16 +52,16 @@
     "id": 3146664
   },
   {
-    "nome": "Arie Dutra Storch - Casal",
-    "id": 3146665
-  },
-  {
     "nome": "Beatriz de Castro Fernandes",
     "id": 3146666
   },
   {
     "nome": "Bruna Brandão",
     "id": 3146668
+  },
+  {
+    "nome": "Bruna Sampaio Defendi",
+    "id": 3953697
   },
   {
     "nome": "Bruno André Scatena - Casal",
@@ -72,7 +72,7 @@
     "id": 3146670
   },
   {
-    "nome": "CARLOS EDUARDO MORAES DA ROSA",
+    "nome": "Carlos Eduardo Moraes da Rosa",
     "id": 3751875
   },
   {
@@ -88,16 +88,24 @@
     "id": 3146673
   },
   {
-    "nome": "César Augusto Sanches Vilarim - Casal",
-    "id": 3146675
-  },
-  {
     "nome": "Claudio Machado de Almeida",
     "id": 3146676
   },
   {
+    "nome": "Conceição da Silva Rosa Monteiro",
+    "id": 3146677
+  },
+  {
+    "nome": "César Augusto Sanches Vilarim - Casal",
+    "id": 3146675
+  },
+  {
     "nome": "Dagoberto Dias de Almeida Junior - Casal",
     "id": 3146678
+  },
+  {
+    "nome": "Daniel Davi Ribeiro",
+    "id": 3830922
   },
   {
     "nome": "Daniel Jorge Pereira Telles - Casal",
@@ -106,10 +114,6 @@
   {
     "nome": "Daniel Lopes Alves",
     "id": 3146680
-  },
-  {
-    "nome": "Daniella Gaudêncio Capato",
-    "id": 3690812
   },
   {
     "nome": "Danilo da Cruz Nogueira",
@@ -140,18 +144,6 @@
     "id": 3146690
   },
   {
-    "nome": "Emanuelle Dias Pinto",
-    "id": 3146691
-  },
-  {
-    "nome": "Fábio Scaldelai Ribeiro",
-    "id": 3146692
-  },
-  {
-    "nome": "Fátima Lorenzo",
-    "id": 3720323
-  },
-  {
     "nome": "Felipe Bechara Medeiros Giesteira",
     "id": 3146693
   },
@@ -174,6 +166,14 @@
   {
     "nome": "Flavia Diana Pereira",
     "id": 3146697
+  },
+  {
+    "nome": "Fábio Scaldelai Ribeiro",
+    "id": 3146692
+  },
+  {
+    "nome": "Fátima Lorenzo",
+    "id": 3720323
   },
   {
     "nome": "Gabriel Eduardo Bezerra",
@@ -204,12 +204,24 @@
     "id": 3146765
   },
   {
+    "nome": "Igor da Fonseca Palmieri",
+    "id": 3805703
+  },
+  {
     "nome": "Isaac Toledo Dull",
     "id": 3542647
   },
   {
     "nome": "Jackson Alexandre Gonçalves Nascimento - Casal",
     "id": 3146706
+  },
+  {
+    "nome": "Jose Francisco Feitosa de Almeida",
+    "id": 3146712
+  },
+  {
+    "nome": "Josias Gomes Torres Neto",
+    "id": 3312976
   },
   {
     "nome": "João Felipe Domingues Bezerra - Casal",
@@ -222,18 +234,6 @@
   {
     "nome": "João Mateus do Nascimento Neto - Casal",
     "id": 3146710
-  },
-  {
-    "nome": "Jose Francisco Feitosa de Almeida",
-    "id": 3146712
-  },
-  {
-    "nome": "José Henrique dos Santos",
-    "id": 3146713
-  },
-  {
-    "nome": "Josias Gomes Torres Neto",
-    "id": 3312976
   },
   {
     "nome": "Kashi Luis dos Santos Galvão - Casal",
@@ -250,10 +250,6 @@
   {
     "nome": "Lenita Bechara Medeiros",
     "id": 3146718
-  },
-  {
-    "nome": "Lívia Franchin Ramos",
-    "id": 3146719
   },
   {
     "nome": "Luan Santos de Araújo (Casal)",
@@ -296,6 +292,10 @@
     "id": 3295104
   },
   {
+    "nome": "Lívia Franchin Ramos",
+    "id": 3146719
+  },
+  {
     "nome": "Marcia Couto Geraldi",
     "id": 3146731
   },
@@ -320,7 +320,7 @@
     "id": 3146736
   },
   {
-    "nome": "Maurício Uyeda (Casal)",
+    "nome": "Maurício Uyeda",
     "id": 3146737
   },
   {
@@ -332,8 +332,8 @@
     "id": 3146740
   },
   {
-    "nome": "Natália Fidelis Setoue",
-    "id": 3146742
+    "nome": "Nair Guerra Cardoso",
+    "id": 3146741
   },
   {
     "nome": "Nelson Jesus Sudan Bezerra - Casal",
@@ -350,10 +350,6 @@
   {
     "nome": "Renata Augusta Franchin",
     "id": 3146747
-  },
-  {
-    "nome": "Renata Hsu Tze Hung",
-    "id": 3146746
   },
   {
     "nome": "Reny Chagas Pinto",
@@ -384,7 +380,7 @@
     "id": 3295108
   },
   {
-    "nome": "SERGIO ROSA",
+    "nome": "Sergio Rosa",
     "id": 3751880
   },
   {

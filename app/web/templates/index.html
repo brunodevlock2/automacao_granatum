@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Granatum - Web</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="ph-fill ph-wallet"></i>
+                <h2>Granatum<span>Bot</span></h2>
+            </div>
+            
+            <nav class="menu">
+                <p class="menu-label">Ações de Cobrança</p>
+                <a href="#" class="menu-item active" data-target="form-adicionar">
+                    <i class="ph ph-plus-circle"></i>
+                    Adicionar Lançamento
+                </a>
+                <a href="#" class="menu-item" data-target="form-remover">
+                    <i class="ph ph-minus-circle"></i>
+                    Remover Lançamento
+                </a>
+                
+                <p class="menu-label">Relatórios</p>
+                <a href="#" class="menu-item" data-target="form-listar">
+                    <i class="ph ph-list-dashes"></i>
+                    Listar Lançamentos
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Painel de Controle</h1>
+                <div class="status-indicator">
+                    <span class="dot" id="ws-dot"></span>
+                    <span id="ws-status">Conectando...</span>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                
+                <!-- Formulário: Adicionar Lançamento -->
+                <section id="form-adicionar" class="glass-panel form-section active-section">
+                    <h2><i class="ph ph-plus-circle"></i> Adicionar Lançamento a Cobranças Existentes</h2>
+                    <p class="description">Esta ação irá buscar as cobranças dos clientes na lista selecionada, cancelá-las e recriá-las adicionando o novo item.</p>
+                    
+                    <form id="adicionarForm" onsubmit="event.preventDefault(); submitAdicionar();">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="add-lista">Lista de Clientes</label>
+                                <select id="add-lista" required>
+                                    <option value="">Carregando...</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="add-data-inicio">Data Início (YYYY-MM-DD)</label>
+                                <input type="date" id="add-data-inicio" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="add-data-fim">Data Fim (YYYY-MM-DD)</label>
+                                <input type="date" id="add-data-fim" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="add-descricao">Descrição do Novo Item</label>
+                                <input type="text" id="add-descricao" placeholder="Ex: Material Didático" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="add-valor">Valor por Pessoa (R$)</label>
+                                <input type="number" id="add-valor" step="0.01" min="0" placeholder="Ex: 50.00" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="add-categoria">Categoria</label>
+                                <select id="add-categoria" required>
+                                    <option value="">Carregando...</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="add-centro-custo">Centro de Custo (Opcional)</label>
+                                <select id="add-centro-custo">
+                                    <option value="">Nenhum</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="add-dias">Dias para Emissão (Opcional)</label>
+                                <input type="number" id="add-dias" placeholder="Ex: 5">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="btn-add">
+                                <i class="ph-bold ph-play"></i> Executar Adição
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Formulário: Remover Lançamento -->
+                <section id="form-remover" class="glass-panel form-section">
+                    <h2><i class="ph ph-minus-circle"></i> Remover Lançamento de Cobranças</h2>
+                    <p class="description">Esta ação irá buscar cobranças e remover itens baseados nos filtros especificados abaixo.</p>
+                    
+                    <form id="removerForm" onsubmit="event.preventDefault(); submitRemover();">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="rem-lista">Lista de Clientes</label>
+                                <select id="rem-lista" required>
+                                    <option value="">Carregando...</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="rem-data-inicio">Data Início (YYYY-MM-DD)</label>
+                                <input type="date" id="rem-data-inicio" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rem-data-fim">Data Fim (YYYY-MM-DD)</label>
+                                <input type="date" id="rem-data-fim" required>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="rem-descricao">Filtro: Descrição Contém (Opcional)</label>
+                                <input type="text" id="rem-descricao" placeholder="Ex: Material">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rem-categoria">Filtro: Categoria (Opcional)</label>
+                                <select id="rem-categoria">
+                                    <option value="">Todas</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rem-valor">Filtro: Valor Exato (Opcional)</label>
+                                <input type="number" id="rem-valor" step="0.01" min="0" placeholder="Ex: 50.00">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-danger" id="btn-rem">
+                                <i class="ph-bold ph-trash"></i> Executar Remoção
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                
+                <!-- Formulário: Placeholder (Listar) -->
+                <section id="form-listar" class="glass-panel form-section">
+                    <h2><i class="ph ph-list-dashes"></i> Listar Lançamentos</h2>
+                    <p class="description">Recurso em desenvolvimento para visualização web.</p>
+                </section>
+
+                <!-- Área de Progresso e Logs (Sempre visível durante execução) -->
+                <section class="glass-panel console-panel">
+                    <div class="console-header">
+                        <h3><i class="ph ph-terminal-window"></i> Terminal de Execução</h3>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="terminal-output" id="terminal-output">
+                        <div class="log-line system-msg">Aguardando início de tarefa...</div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,789 @@
+{
+    "processadas": 112,
+    "sucesso": 111,
+    "falhas": 1,
+    "detalhes": [
+        {
+            "cobranca_id_original": 3533770,
+            "cobranca_id_novo": 3533771,
+            "cliente_id": 3146650,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3125009,
+            "cobranca_id_novo": 3533772,
+            "cliente_id": 3146651,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3125200,
+            "cobranca_id_novo": 3533773,
+            "cliente_id": 3146653,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3125578,
+            "cobranca_id_novo": 3533774,
+            "cliente_id": 3146654,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3125652,
+            "cobranca_id_novo": 3533775,
+            "cliente_id": 3146655,
+            "status": "OK",
+            "itens_count": 16
+        },
+        {
+            "cobranca_id_original": 3131906,
+            "cobranca_id_novo": 3533776,
+            "cliente_id": 3146656,
+            "status": "OK",
+            "itens_count": 17
+        },
+        {
+            "cobranca_id_original": 3131988,
+            "cobranca_id_novo": 3533777,
+            "cliente_id": 3146657,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3132064,
+            "cobranca_id_novo": 3533778,
+            "cliente_id": 3146658,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3132141,
+            "cobranca_id_novo": 3533779,
+            "cliente_id": 3146659,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3132293,
+            "cobranca_id_novo": 3533780,
+            "cliente_id": 3146660,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3132376,
+            "cobranca_id_novo": 3533781,
+            "cliente_id": 3146661,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3132535,
+            "cobranca_id_novo": 3533782,
+            "cliente_id": 3146662,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3132768,
+            "cobranca_id_novo": 3533783,
+            "cliente_id": 3146664,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3132847,
+            "cobranca_id_novo": 3533784,
+            "cliente_id": 3146665,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3137867,
+            "cobranca_id_novo": 3533785,
+            "cliente_id": 3146666,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3133934,
+            "cobranca_id_novo": 3533786,
+            "cliente_id": 3146668,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3533769,
+            "cobranca_id_novo": 3533787,
+            "cliente_id": 3146669,
+            "status": "OK",
+            "itens_count": 16
+        },
+        {
+            "cobranca_id_original": 3133202,
+            "cobranca_id_novo": 3533788,
+            "cliente_id": 3146670,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3519878,
+            "cobranca_id_novo": 3533789,
+            "cliente_id": 3751875,
+            "status": "OK",
+            "itens_count": 9
+        },
+        {
+            "cobranca_id_original": 3132983,
+            "cobranca_id_novo": 3533790,
+            "cliente_id": 3146671,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3133056,
+            "cobranca_id_novo": 3533791,
+            "cliente_id": 3146672,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3134009,
+            "cobranca_id_novo": 3533792,
+            "cliente_id": 3146673,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3134155,
+            "cobranca_id_novo": 3533793,
+            "cliente_id": 3146675,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3134783,
+            "cobranca_id_novo": 3533794,
+            "cliente_id": 3146676,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3136116,
+            "cobranca_id_novo": 3533795,
+            "cliente_id": 3146678,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3134546,
+            "cobranca_id_novo": 3533796,
+            "cliente_id": 3146679,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3134621,
+            "cobranca_id_novo": 3533797,
+            "cliente_id": 3146680,
+            "status": "OK",
+            "itens_count": 16
+        },
+        {
+            "cobranca_id_original": 3485365,
+            "cobranca_id_novo": 3533798,
+            "cliente_id": 3690812,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3120170,
+            "cobranca_id_novo": 3533799,
+            "cliente_id": 3146683,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3120615,
+            "cobranca_id_novo": 3533800,
+            "cliente_id": 3146684,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3122553,
+            "cobranca_id_novo": 3533801,
+            "cliente_id": 3146685,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3126256,
+            "cobranca_id_novo": 3533802,
+            "cliente_id": 3146687,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3126329,
+            "cobranca_id_novo": 3533803,
+            "cliente_id": 3146688,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3126405,
+            "cobranca_id_novo": 3533804,
+            "cliente_id": 3146689,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3126478,
+            "cobranca_id_novo": 3533805,
+            "cliente_id": 3146690,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3126551,
+            "cobranca_id_novo": 3533806,
+            "cliente_id": 3146691,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3522619,
+            "cobranca_id_novo": 3533807,
+            "cliente_id": 3146692,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3496755,
+            "cobranca_id_novo": 3533808,
+            "cliente_id": 3720323,
+            "status": "OK",
+            "itens_count": 9
+        },
+        {
+            "cobranca_id_original": 3133274,
+            "cobranca_id_novo": 3533809,
+            "cliente_id": 3146693,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3133348,
+            "cobranca_id_novo": 3533810,
+            "cliente_id": 3146694,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3165650,
+            "cobranca_id_novo": 3533811,
+            "cliente_id": 3210136,
+            "status": "OK",
+            "itens_count": 8
+        },
+        {
+            "cobranca_id_original": 3136632,
+            "cobranca_id_novo": 3533812,
+            "cliente_id": 3146695,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3133422,
+            "cobranca_id_novo": 3533813,
+            "cliente_id": 3146696,
+            "status": "OK",
+            "itens_count": 15
+        },
+        {
+            "cobranca_id_original": 3133495,
+            "cobranca_id_novo": 3533814,
+            "cliente_id": 3146697,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3133641,
+            "cobranca_id_novo": 3533815,
+            "cliente_id": 3146698,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3210686,
+            "cobranca_id_novo": 3533816,
+            "cliente_id": 3146699,
+            "status": "OK",
+            "itens_count": 8
+        },
+        {
+            "cobranca_id_original": 3137000,
+            "cobranca_id_novo": 3533817,
+            "cliente_id": 3146701,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3136193,
+            "cobranca_id_novo": 3533818,
+            "cliente_id": 3146702,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3290451,
+            "cobranca_id_novo": 3533819,
+            "cliente_id": 3371065,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3137073,
+            "cobranca_id_novo": 3533820,
+            "cliente_id": 3146703,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3189484,
+            "cobranca_id_novo": 3533821,
+            "cliente_id": 3146765,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3340481,
+            "cobranca_id_novo": 3533822,
+            "cliente_id": 3542647,
+            "status": "OK",
+            "itens_count": 9
+        },
+        {
+            "cobranca_id_original": 3136412,
+            "cobranca_id_novo": 3533823,
+            "cliente_id": 3146706,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3136266,
+            "cobranca_id_novo": 3533824,
+            "cliente_id": 3146708,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3136485,
+            "cobranca_id_novo": 3533825,
+            "cliente_id": 3146709,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3136339,
+            "cobranca_id_novo": 3533826,
+            "cliente_id": 3146710,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3123738,
+            "cobranca_id_novo": 3533827,
+            "cliente_id": 3146712,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3123811,
+            "cobranca_id_novo": 3533828,
+            "cliente_id": 3146713,
+            "status": "OK",
+            "itens_count": 15
+        },
+        {
+            "cobranca_id_original": 3245959,
+            "cobranca_id_novo": 3533829,
+            "cliente_id": 3312976,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3124071,
+            "cobranca_id_novo": 3533830,
+            "cliente_id": 3146715,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3124189,
+            "cobranca_id_novo": 3533831,
+            "cliente_id": 3146716,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3124329,
+            "cobranca_id_novo": 3533832,
+            "cliente_id": 3146717,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3124441,
+            "cobranca_id_novo": 3533833,
+            "cliente_id": 3146718,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3124527,
+            "cobranca_id_novo": 3533834,
+            "cliente_id": 3146719,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3124700,
+            "cobranca_id_novo": 3533835,
+            "cliente_id": 3146720,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3124855,
+            "cobranca_id_novo": 3533836,
+            "cliente_id": 3146721,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3291014,
+            "cobranca_id_novo": 3533837,
+            "cliente_id": 3371061,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3124936,
+            "cobranca_id_novo": 3533838,
+            "cliente_id": 3146722,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3165389,
+            "cobranca_id_novo": 3533839,
+            "cliente_id": 3146725,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3125805,
+            "cobranca_id_novo": 3533840,
+            "cliente_id": 3146726,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3129855,
+            "cobranca_id_novo": 3533841,
+            "cliente_id": 3146728,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3130082,
+            "cobranca_id_novo": 3533842,
+            "cliente_id": 3146729,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3130154,
+            "cobranca_id_novo": 3533843,
+            "cliente_id": 3146730,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3229618,
+            "cobranca_id_novo": 3533844,
+            "cliente_id": 3295104,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3130228,
+            "cobranca_id_novo": 3533845,
+            "cliente_id": 3146731,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3130301,
+            "cobranca_id_novo": 3533846,
+            "cliente_id": 3146732,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3130375,
+            "cobranca_id_novo": 3533847,
+            "cliente_id": 3146733,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3130448,
+            "cobranca_id_novo": 3533848,
+            "cliente_id": 3146734,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3351994,
+            "cobranca_id_novo": 3533849,
+            "cliente_id": 3146735,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3130609,
+            "cobranca_id_novo": 3533850,
+            "cliente_id": 3146736,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3130683,
+            "cobranca_id_novo": 3533851,
+            "cliente_id": 3146737,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3130756,
+            "cobranca_id_novo": 3533852,
+            "cliente_id": 3146738,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3189287,
+            "cobranca_id_novo": 3533853,
+            "cliente_id": 3146740,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3119237,
+            "cobranca_id_novo": 3533854,
+            "cliente_id": 3146742,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3119401,
+            "cobranca_id_novo": 3533855,
+            "cliente_id": 3146743,
+            "status": "OK",
+            "itens_count": 15
+        },
+        {
+            "cobranca_id_original": 3119878,
+            "cobranca_id_novo": 3533856,
+            "cliente_id": 3146744,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3120097,
+            "cobranca_id_novo": 3533857,
+            "cliente_id": 3146745,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3120243,
+            "cliente_id": 3146747,
+            "status": "FALHA_CREATE"
+        },
+        {
+            "cobranca_id_original": 3139227,
+            "cobranca_id_novo": 3533858,
+            "cliente_id": 3146746,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3120394,
+            "cobranca_id_novo": 3533859,
+            "cliente_id": 3146749,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3120467,
+            "cobranca_id_novo": 3533860,
+            "cliente_id": 3146750,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3120540,
+            "cobranca_id_novo": 3533861,
+            "cliente_id": 3146751,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3137372,
+            "cobranca_id_novo": 3533862,
+            "cliente_id": 3146752,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3120870,
+            "cobranca_id_novo": 3533863,
+            "cliente_id": 3146754,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3121028,
+            "cobranca_id_novo": 3533864,
+            "cliente_id": 3146755,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3120951,
+            "cobranca_id_novo": 3533865,
+            "cliente_id": 3146756,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3229691,
+            "cobranca_id_novo": 3533866,
+            "cliente_id": 3295108,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3519953,
+            "cobranca_id_novo": 3533867,
+            "cliente_id": 3751880,
+            "status": "OK",
+            "itens_count": 9
+        },
+        {
+            "cobranca_id_original": 3340408,
+            "cobranca_id_novo": 3533868,
+            "cliente_id": 3542643,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3121192,
+            "cobranca_id_novo": 3533869,
+            "cliente_id": 3146758,
+            "status": "OK",
+            "itens_count": 13
+        },
+        {
+            "cobranca_id_original": 3340335,
+            "cobranca_id_novo": 3533870,
+            "cliente_id": 3542615,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3121266,
+            "cobranca_id_novo": 3533871,
+            "cliente_id": 3146759,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3478742,
+            "cobranca_id_novo": 3533872,
+            "cliente_id": 3679765,
+            "status": "OK",
+            "itens_count": 10
+        },
+        {
+            "cobranca_id_original": 3121341,
+            "cobranca_id_novo": 3533873,
+            "cliente_id": 3146760,
+            "status": "OK",
+            "itens_count": 15
+        },
+        {
+            "cobranca_id_original": 3121414,
+            "cobranca_id_novo": 3533874,
+            "cliente_id": 3146761,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3355401,
+            "cobranca_id_novo": 3533875,
+            "cliente_id": 3558408,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3121491,
+            "cobranca_id_novo": 3533876,
+            "cliente_id": 3146762,
+            "status": "OK",
+            "itens_count": 14
+        },
+        {
+            "cobranca_id_original": 3210501,
+            "cobranca_id_novo": 3533877,
+            "cliente_id": 3273204,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3304591,
+            "cobranca_id_novo": 3533878,
+            "cliente_id": 3146763,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3121638,
+            "cobranca_id_novo": 3533879,
+            "cliente_id": 3146764,
+            "status": "OK",
+            "itens_count": 11
+        },
+        {
+            "cobranca_id_original": 3121816,
+            "cobranca_id_novo": 3533880,
+            "cliente_id": 3146766,
+            "status": "OK",
+            "itens_count": 12
+        },
+        {
+            "cobranca_id_original": 3121891,
+            "cobranca_id_novo": 3533881,
+            "cliente_id": 3146767,
+            "status": "OK",
+            "itens_count": 13
+        }
+    ]
+}

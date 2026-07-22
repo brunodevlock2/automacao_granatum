@@ -1,0 +1,952 @@
+{
+    "data_execucao": "2026-02-01 11:03:02",
+    "operacao": "ADICIONAR_LANCAMENTO",
+    "item_adicionado": {
+        "descricao": "Taxa de Preparo - Núcleo Divino Manto (R$18,00 por pessoa)",
+        "categoria_id": 2384107,
+        "valor": 18.0,
+        "centro_custo_lucro_id": 308910
+    },
+    "periodo": {
+        "data_inicio": "2026-02-01",
+        "data_fim": "2026-02-28"
+    },
+    "cobrancas_recriadas": 93,
+    "cobrancas_com_falha": 0,
+    "total_lancamentos": 1225,
+    "clientes_impactados": 93,
+    "lista_clientes": [
+        3146752,
+        3146754,
+        3146755,
+        3146756,
+        3146758,
+        3146759,
+        3146760,
+        3146761,
+        3558408,
+        3146762,
+        3146763,
+        3146765,
+        3146764,
+        3146766,
+        3146767,
+        3371061,
+        3371065,
+        3542615,
+        3542647,
+        3720323,
+        3312976,
+        3295108,
+        3210136,
+        3146650,
+        3146651,
+        3146653,
+        3146654,
+        3146655,
+        3146656,
+        3146658,
+        3146659,
+        3146660,
+        3146661,
+        3146664,
+        3146665,
+        3146666,
+        3146668,
+        3146669,
+        3146670,
+        3146671,
+        3146672,
+        3146676,
+        3146678,
+        3146679,
+        3146680,
+        3146683,
+        3146684,
+        3146685,
+        3146687,
+        3146688,
+        3146689,
+        3146690,
+        3751875,
+        3146691,
+        3146692,
+        3146693,
+        3146694,
+        3146695,
+        3146696,
+        3146697,
+        3146698,
+        3751880,
+        3146701,
+        3146702,
+        3146703,
+        3146706,
+        3146708,
+        3146709,
+        3146710,
+        3146713,
+        3146716,
+        3146718,
+        3146720,
+        3146721,
+        3146722,
+        3146725,
+        3146726,
+        3146728,
+        3146729,
+        3146731,
+        3146732,
+        3146733,
+        3146735,
+        3146736,
+        3146737,
+        3146738,
+        3146740,
+        3273204,
+        3146743,
+        3146745,
+        3146746,
+        3146750,
+        3146751
+    ],
+    "detalhes": [
+        {
+            "cobranca_id_original": 3533771,
+            "cobranca_id_novo": 3533905,
+            "cliente_id": 3146650,
+            "cliente_nome": "Adilson Barbosa de Oliveira - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "624.53"
+        },
+        {
+            "cobranca_id_original": 3533772,
+            "cobranca_id_novo": 3533906,
+            "cliente_id": 3146651,
+            "cliente_nome": "Adilson Wagner Gandu - Casal",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "626.53"
+        },
+        {
+            "cobranca_id_original": 3533773,
+            "cobranca_id_novo": 3533907,
+            "cliente_id": 3146653,
+            "cliente_nome": "Alain Michel Schoeny - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "682.53"
+        },
+        {
+            "cobranca_id_original": 3533774,
+            "cobranca_id_novo": 3533908,
+            "cliente_id": 3146654,
+            "cliente_nome": "Aleixandre Valentim de Faria",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "296.21"
+        },
+        {
+            "cobranca_id_original": 3533775,
+            "cobranca_id_novo": 3533909,
+            "cliente_id": 3146655,
+            "cliente_nome": "Alexandre de Freitas Guimarães - Casal",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "624.53"
+        },
+        {
+            "cobranca_id_original": 3533776,
+            "cobranca_id_novo": 3533910,
+            "cliente_id": 3146656,
+            "cliente_nome": "Alexandre Spoladore - Casal",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "816.53"
+        },
+        {
+            "cobranca_id_original": 3533778,
+            "cobranca_id_novo": 3533911,
+            "cliente_id": 3146658,
+            "cliente_nome": "Ana Beatriz de Alcantara Rocha",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "302.21"
+        },
+        {
+            "cobranca_id_original": 3533779,
+            "cobranca_id_novo": 3533912,
+            "cliente_id": 3146659,
+            "cliente_nome": "Ana Carolina Silva Rocha",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "254.21"
+        },
+        {
+            "cobranca_id_original": 3533780,
+            "cobranca_id_novo": 3533913,
+            "cliente_id": 3146660,
+            "cliente_nome": "Ana Carolina Soares Batista",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "331.21"
+        },
+        {
+            "cobranca_id_original": 3533781,
+            "cobranca_id_novo": 3533914,
+            "cliente_id": 3146661,
+            "cliente_nome": "Anderson de Marco Silva - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "626.53"
+        },
+        {
+            "cobranca_id_original": 3533783,
+            "cobranca_id_novo": 3533915,
+            "cliente_id": 3146664,
+            "cliente_nome": "Aquiles Gobbi Fernandes",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "331.21"
+        },
+        {
+            "cobranca_id_original": 3533784,
+            "cobranca_id_novo": 3533916,
+            "cliente_id": 3146665,
+            "cliente_nome": "Arie Dutra Storch - Casal",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "605.53"
+        },
+        {
+            "cobranca_id_original": 3533785,
+            "cobranca_id_novo": 3533917,
+            "cliente_id": 3146666,
+            "cliente_nome": "Beatriz de Castro Fernandes",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "246.21"
+        },
+        {
+            "cobranca_id_original": 3533786,
+            "cobranca_id_novo": 3533918,
+            "cliente_id": 3146668,
+            "cliente_nome": "Bruna Brandão",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "334.21"
+        },
+        {
+            "cobranca_id_original": 3533787,
+            "cobranca_id_novo": 3533919,
+            "cliente_id": 3146669,
+            "cliente_nome": "Bruno André Scatena - Casal",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "635.53"
+        },
+        {
+            "cobranca_id_original": 3533788,
+            "cobranca_id_novo": 3533920,
+            "cliente_id": 3146670,
+            "cliente_nome": "Bruno Pereira dos Santos - Casal",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "257.27"
+        },
+        {
+            "cobranca_id_original": 3533789,
+            "cobranca_id_novo": 3533921,
+            "cliente_id": 3751875,
+            "cliente_nome": "CARLOS EDUARDO MORAES DA ROSA",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "168.00"
+        },
+        {
+            "cobranca_id_original": 3533790,
+            "cobranca_id_novo": 3533922,
+            "cliente_id": 3146671,
+            "cliente_nome": "Carlos Henrique de Mello Dias",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "323.21"
+        },
+        {
+            "cobranca_id_original": 3533791,
+            "cobranca_id_novo": 3533923,
+            "cliente_id": 3146672,
+            "cliente_nome": "Carlos Hering Paschke - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "709.53"
+        },
+        {
+            "cobranca_id_original": 3533794,
+            "cobranca_id_novo": 3533924,
+            "cliente_id": 3146676,
+            "cliente_nome": "Claudio Machado de Almeida",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "350.21"
+        },
+        {
+            "cobranca_id_original": 3533795,
+            "cobranca_id_novo": 3533925,
+            "cliente_id": 3146678,
+            "cliente_nome": "Dagoberto Dias de Almeida Junior - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "764.53"
+        },
+        {
+            "cobranca_id_original": 3533796,
+            "cobranca_id_novo": 3533926,
+            "cliente_id": 3146679,
+            "cliente_nome": "Daniel Jorge Pereira Telles - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "680.53"
+        },
+        {
+            "cobranca_id_original": 3533797,
+            "cobranca_id_novo": 3533927,
+            "cliente_id": 3146680,
+            "cliente_nome": "Daniel Lopes Alves",
+            "status": "OK",
+            "itens_count": 17,
+            "valor_novo": "482.71"
+        },
+        {
+            "cobranca_id_original": 3533799,
+            "cobranca_id_novo": 3533928,
+            "cliente_id": 3146683,
+            "cliente_nome": "Danilo da Cruz Nogueira",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "231.21"
+        },
+        {
+            "cobranca_id_original": 3533800,
+            "cobranca_id_novo": 3533929,
+            "cliente_id": 3146684,
+            "cliente_nome": "Danilo Pereira Portela",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "291.21"
+        },
+        {
+            "cobranca_id_original": 3533801,
+            "cobranca_id_novo": 3533930,
+            "cliente_id": 3146685,
+            "cliente_nome": "Dario Fejgelman",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "329.21"
+        },
+        {
+            "cobranca_id_original": 3533802,
+            "cobranca_id_novo": 3533931,
+            "cliente_id": 3146687,
+            "cliente_nome": "Davi Rocha Lorenzo",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "382.21"
+        },
+        {
+            "cobranca_id_original": 3533803,
+            "cobranca_id_novo": 3533932,
+            "cliente_id": 3146688,
+            "cliente_nome": "Diego Rodrigo Barbosa de Oliveira - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "525.53"
+        },
+        {
+            "cobranca_id_original": 3533804,
+            "cobranca_id_novo": 3533933,
+            "cliente_id": 3146689,
+            "cliente_nome": "Diogo Freitas Pinto - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "610.53"
+        },
+        {
+            "cobranca_id_original": 3533805,
+            "cobranca_id_novo": 3533934,
+            "cliente_id": 3146690,
+            "cliente_nome": "Eloísa da Rosa Ferro",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "357.21"
+        },
+        {
+            "cobranca_id_original": 3533806,
+            "cobranca_id_novo": 3533935,
+            "cliente_id": 3146691,
+            "cliente_nome": "Emanuelle Dias Pinto",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "231.21"
+        },
+        {
+            "cobranca_id_original": 3533807,
+            "cobranca_id_novo": 3533936,
+            "cliente_id": 3146692,
+            "cliente_nome": "Fábio Scaldelai Ribeiro",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "236.21"
+        },
+        {
+            "cobranca_id_original": 3533808,
+            "cobranca_id_novo": 3533937,
+            "cliente_id": 3720323,
+            "cliente_nome": "Fátima Lorenzo",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "222.21"
+        },
+        {
+            "cobranca_id_original": 3533809,
+            "cobranca_id_novo": 3533938,
+            "cliente_id": 3146693,
+            "cliente_nome": "Felipe Bechara Medeiros Giesteira",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "231.21"
+        },
+        {
+            "cobranca_id_original": 3533810,
+            "cobranca_id_novo": 3533939,
+            "cliente_id": 3146694,
+            "cliente_nome": "Felipe Marques Defendi",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "296.21"
+        },
+        {
+            "cobranca_id_original": 3533811,
+            "cobranca_id_novo": 3533940,
+            "cliente_id": 3210136,
+            "cliente_nome": "Fernando Guilherme Mayer - Casal",
+            "status": "OK",
+            "itens_count": 9,
+            "valor_novo": "440.53"
+        },
+        {
+            "cobranca_id_original": 3533812,
+            "cobranca_id_novo": 3533941,
+            "cliente_id": 3146695,
+            "cliente_nome": "Filipe Marques Fernandes da Silva",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "357.21"
+        },
+        {
+            "cobranca_id_original": 3533813,
+            "cobranca_id_novo": 3533942,
+            "cliente_id": 3146696,
+            "cliente_nome": "Filipe Martins Gonçalves",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "396.21"
+        },
+        {
+            "cobranca_id_original": 3533814,
+            "cobranca_id_novo": 3533943,
+            "cliente_id": 3146697,
+            "cliente_nome": "Flavia Diana Pereira",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "266.21"
+        },
+        {
+            "cobranca_id_original": 3533815,
+            "cobranca_id_novo": 3533944,
+            "cliente_id": 3146698,
+            "cliente_nome": "Gabriel Eduardo Bezerra",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "431.21"
+        },
+        {
+            "cobranca_id_original": 3533817,
+            "cobranca_id_novo": 3533945,
+            "cliente_id": 3146701,
+            "cliente_nome": "Glaucia Maria de Castro Mendes",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "341.21"
+        },
+        {
+            "cobranca_id_original": 3533818,
+            "cobranca_id_novo": 3533946,
+            "cliente_id": 3146702,
+            "cliente_nome": "Guilherme Selerges Barbosa Louzada",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "288.21"
+        },
+        {
+            "cobranca_id_original": 3533819,
+            "cobranca_id_novo": 3533947,
+            "cliente_id": 3371065,
+            "cliente_nome": "Gustavo Gallego Alves",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "231.21"
+        },
+        {
+            "cobranca_id_original": 3533820,
+            "cobranca_id_novo": 3533948,
+            "cliente_id": 3146703,
+            "cliente_nome": "Heitor Barros Spoladore",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "287.21"
+        },
+        {
+            "cobranca_id_original": 3533821,
+            "cobranca_id_novo": 3533949,
+            "cliente_id": 3146765,
+            "cliente_nome": "Helenice Campos Ribeiro",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "323.21"
+        },
+        {
+            "cobranca_id_original": 3533822,
+            "cobranca_id_novo": 3533950,
+            "cliente_id": 3542647,
+            "cliente_nome": "Isaac Toledo Dull",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "222.21"
+        },
+        {
+            "cobranca_id_original": 3533823,
+            "cobranca_id_novo": 3533951,
+            "cliente_id": 3146706,
+            "cliente_nome": "Jackson Alexandre Gonçalves Nascimento - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "571.53"
+        },
+        {
+            "cobranca_id_original": 3533824,
+            "cobranca_id_novo": 3533952,
+            "cliente_id": 3146708,
+            "cliente_nome": "João Felipe Domingues Bezerra - Casal",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "353.53"
+        },
+        {
+            "cobranca_id_original": 3533825,
+            "cobranca_id_novo": 3533953,
+            "cliente_id": 3146709,
+            "cliente_nome": "João Gabriel Campos de Oliveira Ribeiro",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "311.21"
+        },
+        {
+            "cobranca_id_original": 3533826,
+            "cobranca_id_novo": 3533954,
+            "cliente_id": 3146710,
+            "cliente_nome": "João Mateus do Nascimento Neto - Casal",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "620.53"
+        },
+        {
+            "cobranca_id_original": 3533828,
+            "cobranca_id_novo": 3533955,
+            "cliente_id": 3146713,
+            "cliente_nome": "José Henrique dos Santos",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "378.21"
+        },
+        {
+            "cobranca_id_original": 3533829,
+            "cobranca_id_novo": 3533956,
+            "cliente_id": 3312976,
+            "cliente_nome": "Josias Gomes Torres Neto",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "301.21"
+        },
+        {
+            "cobranca_id_original": 3533831,
+            "cobranca_id_novo": 3533957,
+            "cliente_id": 3146716,
+            "cliente_nome": "Laiz Aloma Fernandes Silva",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "336.21"
+        },
+        {
+            "cobranca_id_original": 3533833,
+            "cobranca_id_novo": 3533958,
+            "cliente_id": 3146718,
+            "cliente_nome": "Lenita Bechara Medeiros",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "404.21"
+        },
+        {
+            "cobranca_id_original": 3533835,
+            "cobranca_id_novo": 3533959,
+            "cliente_id": 3146720,
+            "cliente_nome": "Luan Santos de Araújo (Casal)",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "540.53"
+        },
+        {
+            "cobranca_id_original": 3533836,
+            "cobranca_id_novo": 3533960,
+            "cliente_id": 3146721,
+            "cliente_nome": "Lucas Carvalho Vega",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "241.21"
+        },
+        {
+            "cobranca_id_original": 3533837,
+            "cobranca_id_novo": 3533961,
+            "cliente_id": 3371061,
+            "cliente_nome": "Lucas Marques Meneses",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "221.00"
+        },
+        {
+            "cobranca_id_original": 3533838,
+            "cobranca_id_novo": 3533962,
+            "cliente_id": 3146722,
+            "cliente_nome": "Luciana Maria de Barros",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "371.32"
+        },
+        {
+            "cobranca_id_original": 3533839,
+            "cobranca_id_novo": 3533963,
+            "cliente_id": 3146725,
+            "cliente_nome": "Luis Fernando Barra",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "326.21"
+        },
+        {
+            "cobranca_id_original": 3533840,
+            "cobranca_id_novo": 3533964,
+            "cliente_id": 3146726,
+            "cliente_nome": "Luis Fernando Giesteira - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "644.53"
+        },
+        {
+            "cobranca_id_original": 3533841,
+            "cobranca_id_novo": 3533965,
+            "cliente_id": 3146728,
+            "cliente_nome": "Luiz Bernadino Nogueira - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "614.53"
+        },
+        {
+            "cobranca_id_original": 3533842,
+            "cobranca_id_novo": 3533966,
+            "cliente_id": 3146729,
+            "cliente_nome": "Luiz Carlos de Almeida Ferro - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "706.53"
+        },
+        {
+            "cobranca_id_original": 3533845,
+            "cobranca_id_novo": 3533967,
+            "cliente_id": 3146731,
+            "cliente_nome": "Marcia Couto Geraldi",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "323.21"
+        },
+        {
+            "cobranca_id_original": 3533846,
+            "cobranca_id_novo": 3533968,
+            "cliente_id": 3146732,
+            "cliente_nome": "Marcos Domingos Yoshihissa Higa - Casal",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "680.53"
+        },
+        {
+            "cobranca_id_original": 3533847,
+            "cobranca_id_novo": 3533969,
+            "cliente_id": 3146733,
+            "cliente_nome": "Maria Cecilia Santos Campagnoli",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "187.00"
+        },
+        {
+            "cobranca_id_original": 3533849,
+            "cobranca_id_novo": 3533970,
+            "cliente_id": 3146735,
+            "cliente_nome": "Mariano Azevedo Mendes Nogueira",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "266.21"
+        },
+        {
+            "cobranca_id_original": 3533850,
+            "cobranca_id_novo": 3533971,
+            "cliente_id": 3146736,
+            "cliente_nome": "Maurício dos Santos Corso - Casal",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "857.53"
+        },
+        {
+            "cobranca_id_original": 3533851,
+            "cobranca_id_novo": 3533972,
+            "cliente_id": 3146737,
+            "cliente_nome": "Maurício Uyeda (Casal)",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "747.53"
+        },
+        {
+            "cobranca_id_original": 3533852,
+            "cobranca_id_novo": 3533973,
+            "cliente_id": 3146738,
+            "cliente_nome": "Melissa Montovani Telles",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "232.21"
+        },
+        {
+            "cobranca_id_original": 3533853,
+            "cobranca_id_novo": 3533974,
+            "cliente_id": 3146740,
+            "cliente_nome": "Morena Selerges Barbosa Louzada",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "278.21"
+        },
+        {
+            "cobranca_id_original": 3533855,
+            "cobranca_id_novo": 3533975,
+            "cliente_id": 3146743,
+            "cliente_nome": "Nelson Jesus Sudan Bezerra - Casal",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "794.53"
+        },
+        {
+            "cobranca_id_original": 3533857,
+            "cobranca_id_novo": 3533976,
+            "cliente_id": 3146745,
+            "cliente_nome": "Pedro Henrique Vilares da Silva Kistemann (casal)",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "610.53"
+        },
+        {
+            "cobranca_id_original": 3533858,
+            "cobranca_id_novo": 3533977,
+            "cliente_id": 3146746,
+            "cliente_nome": "Renata Hsu Tze Hung",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "326.21"
+        },
+        {
+            "cobranca_id_original": 3533860,
+            "cobranca_id_novo": 3533978,
+            "cliente_id": 3146750,
+            "cliente_nome": "Roberto de Oliveira Tito",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "384.21"
+        },
+        {
+            "cobranca_id_original": 3533861,
+            "cobranca_id_novo": 3533979,
+            "cliente_id": 3146751,
+            "cliente_nome": "Roberto Richa Romano - Casal",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "497.53"
+        },
+        {
+            "cobranca_id_original": 3533862,
+            "cobranca_id_novo": 3533980,
+            "cliente_id": 3146752,
+            "cliente_nome": "Rodrigo Rocha de Almeida",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "227.21"
+        },
+        {
+            "cobranca_id_original": 3533863,
+            "cobranca_id_novo": 3533981,
+            "cliente_id": 3146754,
+            "cliente_nome": "Ronaldo Gonçalves Lorenzo",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "246.21"
+        },
+        {
+            "cobranca_id_original": 3533864,
+            "cobranca_id_novo": 3533982,
+            "cliente_id": 3146755,
+            "cliente_nome": "Samantha Fonseca dos Santos",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "379.21"
+        },
+        {
+            "cobranca_id_original": 3533865,
+            "cobranca_id_novo": 3533983,
+            "cliente_id": 3146756,
+            "cliente_nome": "Sandro Luiz Galvão de França - Casal",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "500.53"
+        },
+        {
+            "cobranca_id_original": 3533866,
+            "cobranca_id_novo": 3533984,
+            "cliente_id": 3295108,
+            "cliente_nome": "Saulo Bechara Medeiros Giesteira",
+            "status": "OK",
+            "itens_count": 11,
+            "valor_novo": "231.21"
+        },
+        {
+            "cobranca_id_original": 3533867,
+            "cobranca_id_novo": 3533985,
+            "cliente_id": 3751880,
+            "cliente_nome": "SERGIO ROSA",
+            "status": "OK",
+            "itens_count": 10,
+            "valor_novo": "93.21"
+        },
+        {
+            "cobranca_id_original": 3533869,
+            "cobranca_id_novo": 3533986,
+            "cliente_id": 3146758,
+            "cliente_nome": "Sonia Regina Giusti",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "364.21"
+        },
+        {
+            "cobranca_id_original": 3533870,
+            "cobranca_id_novo": 3533987,
+            "cliente_id": 3542615,
+            "cliente_nome": "Stéfano Damásio Bertoncello",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "357.21"
+        },
+        {
+            "cobranca_id_original": 3533871,
+            "cobranca_id_novo": 3533988,
+            "cliente_id": 3146759,
+            "cliente_nome": "Tamara Pavlovna Lafaeff",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "328.21"
+        },
+        {
+            "cobranca_id_original": 3533873,
+            "cobranca_id_novo": 3533989,
+            "cliente_id": 3146760,
+            "cliente_nome": "Taynan Mina Muniz",
+            "status": "OK",
+            "itens_count": 16,
+            "valor_novo": "516.21"
+        },
+        {
+            "cobranca_id_original": 3533874,
+            "cobranca_id_novo": 3533990,
+            "cliente_id": 3146761,
+            "cliente_nome": "Thalles Janones da Silva",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "326.21"
+        },
+        {
+            "cobranca_id_original": 3533875,
+            "cobranca_id_novo": 3533991,
+            "cliente_id": 3558408,
+            "cliente_nome": "Ubaldo Veras Di Migueli - Casal",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "672.53"
+        },
+        {
+            "cobranca_id_original": 3533876,
+            "cobranca_id_novo": 3533992,
+            "cliente_id": 3146762,
+            "cliente_nome": "Valéria Corso Macedo",
+            "status": "OK",
+            "itens_count": 15,
+            "valor_novo": "318.71"
+        },
+        {
+            "cobranca_id_original": 3533877,
+            "cobranca_id_novo": 3533993,
+            "cliente_id": 3273204,
+            "cliente_nome": "Vanessa Aparecida dos Santos",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "246.21"
+        },
+        {
+            "cobranca_id_original": 3533878,
+            "cobranca_id_novo": 3533994,
+            "cliente_id": 3146763,
+            "cliente_nome": "Vitor Rocha Storti",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "296.21"
+        },
+        {
+            "cobranca_id_original": 3533879,
+            "cobranca_id_novo": 3533995,
+            "cliente_id": 3146764,
+            "cliente_nome": "Vítor Steiner Corso",
+            "status": "OK",
+            "itens_count": 12,
+            "valor_novo": "349.21"
+        },
+        {
+            "cobranca_id_original": 3533880,
+            "cobranca_id_novo": 3533996,
+            "cliente_id": 3146766,
+            "cliente_nome": "Weliton do Nascimento",
+            "status": "OK",
+            "itens_count": 13,
+            "valor_novo": "366.21"
+        },
+        {
+            "cobranca_id_original": 3533881,
+            "cobranca_id_novo": 3533997,
+            "cliente_id": 3146767,
+            "cliente_nome": "Wesley Eduardo Barbosa de Oliveira",
+            "status": "OK",
+            "itens_count": 14,
+            "valor_novo": "449.21"
+        }
+    ]
+}

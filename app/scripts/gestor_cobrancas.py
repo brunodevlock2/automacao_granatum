@@ -86,11 +86,16 @@ class GestorCobrancas:
 
         return todas_cobrancas
 
-    def buscar_cobrancas_todos_clientes(self, clientes_ids, data_inicio, data_fim, conta_id=None):
+    def buscar_cobrancas_todos_clientes(self, clientes_ids, data_inicio, data_fim, conta_id=None, progress_callback=None):
         """Busca cobrancas de multiplos clientes."""
         todas = []
-        for cliente_id in clientes_ids:
-            print(f"  Buscando cobrancas do cliente {cliente_id}...")
+        total = len(clientes_ids)
+        for idx, cliente_id in enumerate(clientes_ids, 1):
+            msg = f"Buscando cobrancas do cliente {cliente_id} ({idx}/{total})..."
+            print(f"  {msg}")
+            if progress_callback:
+                progress_callback(msg, int((idx / total) * 100))
+                
             cobrancas = self.buscar_cobrancas_por_cliente(
                 cliente_id, data_inicio, data_fim, conta_id
             )

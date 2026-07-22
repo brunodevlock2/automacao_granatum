@@ -1,0 +1,17 @@
+{
+    "processadas": 2,
+    "sucesso": 0,
+    "falhas": 2,
+    "detalhes": [
+        {
+            "cobranca_id_original": 3137446,
+            "cliente_id": 3146650,
+            "status": "FALHA_CREATE"
+        },
+        {
+            "cobranca_id_original": 3118570,
+            "cliente_id": 3146669,
+            "status": "FALHA_CREATE"
+        }
+    ]
+}

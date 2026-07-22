@@ -20,9 +20,29 @@ URL_BASE = "https://api.granatum.com.br/v1"
 
 # --- Configurações de Cobranças ---
 
+import sys
 import os
-# Base dir is project root (c:\automacao_granatum)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Base dir calculation
+if getattr(sys, 'frozen', False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Se existir um config.json no BASE_DIR (ao lado do executavel), sobrescreve as variaveis!
+config_json_path = os.path.join(BASE_DIR, "config.json")
+if os.path.exists(config_json_path):
+    try:
+        import json
+        with open(config_json_path, "r", encoding="utf-8") as f:
+            overrides = json.load(f)
+            if "TOKEN_GRANATUM" in overrides: TOKEN_GRANATUM = overrides["TOKEN_GRANATUM"]
+            if "CONTA_ID_PADRAO" in overrides: CONTA_ID_PADRAO = int(overrides["CONTA_ID_PADRAO"])
+            if "CATEGORIA_ID_PADRAO" in overrides: CATEGORIA_ID_PADRAO = int(overrides["CATEGORIA_ID_PADRAO"])
+            if "CENTRO_CUSTO_ID_PADRAO" in overrides: CENTRO_CUSTO_ID_PADRAO = int(overrides["CENTRO_CUSTO_ID_PADRAO"])
+            if "TIPO_COBRANCA_PADRAO" in overrides: TIPO_COBRANCA_PADRAO = overrides["TIPO_COBRANCA_PADRAO"]
+    except Exception as e:
+        print(f"Erro ao ler config.json: {e}")
 
 # Diretório com arquivos JSON de listas de clientes
 CLIENTES_DIR = os.path.join(BASE_DIR, "data", "clientes")
@@ -35,4 +55,4 @@ BACKUP_DIR = os.path.join(BASE_DIR, "data", "backups")
 
 # Arquivos JSON Data
 CATEGORIAS_JSON_PATH = os.path.join(BASE_DIR, "data", "categorias.json")
-CENTROS_CUSTO_JSON_PATH = os.path.join(BASE_DIR, "data", "centros_de_custo.json")
+CENTROS_CUSTO_JSON_PATH = os.path.join(BASE_DIR, "data", "centros_de_custo.json")
